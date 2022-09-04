@@ -1,0 +1,86 @@
+@import "./variables";
+
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+
+.navbar {
+  background: lightcoral;
+  @include flexCenter;
+  height: $navbarHeight;
+  width: 100%;
+
+  .navbar-left {
+    background: lightgreen;
+    @include flexCenter;
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar-right {
+    background: lightgrey;
+    @include flexCenter;
+    width: 100%;
+    height: 100%;
+
+    .language {
+      display: none;
+    }
+  }
+
+  .hamburger-menu {
+    z-index: 10;
+    @include flexCenter;
+    background: lightpink;
+    position: fixed;
+    right: 0.5rem;
+    top: 0.5rem;
+
+    div {
+      @include flexCenter;
+    }
+
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+
+  .nav-menu-items {
+    background: lightcyan;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    @include flexCenter;
+    padding-top: $navbarHeight;
+
+    ul {
+      @include flexCenter;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      width: 100%;
+      height: 100%;
+      font-size: 3rem;
+      list-style-type: none;
+      padding: 0;
+      padding-left: 1rem;
+
+      li {
+      }
+    }
+  }
+}
