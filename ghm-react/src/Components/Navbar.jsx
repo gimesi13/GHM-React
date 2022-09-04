@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { CgMenu, CgClose } from "react-icons/cg";
 
@@ -50,6 +50,33 @@ function Navbar({ i18n }) {
   /* states */
   const [isOpen, setIsOpen] = useState(false);
   const controlMenu = useAnimation();
+  const [navbar, setNavbar] = useState(false);
+  const grow = useAnimation();
+  const shrink = useAnimation();
+
+  /* FUNCTIONS */
+
+  // navbar on scroll behavior
+  const handleNavBarScroll = () => {
+    if (window.scrollY >= 1) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", handleNavBarScroll, { passive: true });
+
+  useEffect(() => {
+    if (navbar === true) {
+      shrink.set({ height: 96, backgroundColor: "transparent" });
+      shrink.start({ height: 64, backgroundColor: "black" });
+    } else {
+      grow.set({ height: 64, backgroundColor: "black" });
+      grow.start({ height: 96, backgroundColor: "transparent" });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [navbar]);
 
   /*LANGUAGE SWITCHER*/
   const handleChange = (e) => {
@@ -64,7 +91,11 @@ function Navbar({ i18n }) {
   };
 
   return (
-    <div className="navbar">
+    <motion.div
+      className="navbar"
+      initial={false}
+      animate={navbar ? shrink : grow}
+    >
       <div className="navbar-left">
         <div className="logo">LOGO</div>
         Left
@@ -109,7 +140,7 @@ function Navbar({ i18n }) {
           </motion.div>
         )}
       </AnimatePresence>
-    </div>
+    </motion.div>
   );
 }
 

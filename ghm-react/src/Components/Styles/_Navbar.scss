@@ -17,6 +17,10 @@
 
 .navbar {
   background: lightcoral;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   @include flexCenter;
   height: $navbarHeight;
   width: 100%;
