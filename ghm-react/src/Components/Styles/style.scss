@@ -1,5 +1,12 @@
 @import "./Navbar";
 @import "./variables";
+@import "./Hero";
+@import "./About";
+@import "./Rooms";
+@import "./Location";
+@import "./Slopes";
+@import "./Gallery";
+@import "./Contact";
 
 /* BREAKPOINTS
 //tablet//
@@ -16,8 +23,9 @@
 } 
 */
 
+html {
+}
 body {
-  min-height: 200vh;
   background: lightblue;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -30,4 +38,26 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+section {
+  position: relative;
+  @include flexCenter;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.rounded-container {
+  background: lightpink;
+  transform: translateY(-3rem);
+  width: 90%;
+  border-radius: 3rem;
+  text-align: center;
+}
+
+.image {
+  width: 15rem;
+  height: 10rem;
+  transform: translateY(-3rem);
 }

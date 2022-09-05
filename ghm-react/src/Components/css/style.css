@@ -15,6 +15,7 @@
 } 
 */
 .navbar {
+  z-index: 10;
   background: lightcoral;
   position: fixed;
   top: 0;
@@ -140,6 +141,235 @@
 }
 /* MIXINS */
 /* VARIABLES */
+/* MIXINS */
+/* VARIABLES */
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+.hero {
+  position: relative;
+  height: calc(100vh - 6rem);
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+.hero .hero-arrow {
+  position: absolute;
+  bottom: 5rem;
+}
+
+/* MIXINS */
+/* VARIABLES */
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+.about {
+  margin-bottom: -2rem;
+}
+
+/* MIXINS */
+/* VARIABLES */
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+.rooms {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+.rooms .room-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.rooms .room-cards .card {
+  background: lightgreen;
+  width: 15rem;
+  height: 10rem;
+}
+
+/* MIXINS */
+/* VARIABLES */
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+.location {
+  margin-bottom: -2rem;
+  gap: 2rem;
+}
+.location .map {
+  background: lightgreen;
+  height: 8rem;
+}
+
+/* MIXINS */
+/* VARIABLES */
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+.slopes {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+  padding-bottom: 5rem;
+}
+.slopes .slope-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.slopes .slope-cards .card {
+  background: lightgreen;
+  width: 15rem;
+  height: 10rem;
+}
+
+/* MIXINS */
+/* VARIABLES */
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+.gallery {
+  margin-bottom: -2rem;
+  gap: 2rem;
+}
+.gallery .slider {
+  background: lightgreen;
+  height: 8rem;
+}
+
+/* MIXINS */
+/* VARIABLES */
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+.contact {
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+}
+.contact .contact-form {
+  background: lightgreen;
+  width: 100%;
+  height: 15rem;
+}
+
 /* BREAKPOINTS
 //tablet//
 @media (min-width: 576px) {  
@@ -155,7 +385,6 @@
 } 
 */
 body {
-  min-height: 200vh;
   background: lightblue;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -165,4 +394,39 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.rounded-container {
+  background: lightpink;
+  -webkit-transform: translateY(-3rem);
+          transform: translateY(-3rem);
+  width: 90%;
+  border-radius: 3rem;
+  text-align: center;
+}
+
+.image {
+  width: 15rem;
+  height: 10rem;
+  -webkit-transform: translateY(-3rem);
+          transform: translateY(-3rem);
 }/*# sourceMappingURL=style.css.map */

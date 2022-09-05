@@ -1,0 +1,37 @@
+@import "./variables";
+
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+
+.rooms {
+  background: white;
+  @include flexCenter;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+  padding-bottom: 5rem;
+
+  .room-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    .card {
+      background: lightgreen;
+      width: 15rem;
+      height: 10rem;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "./variables";
+
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+
+.hero {
+  position: relative;
+  height: calc(100vh - 6rem);
+  min-height: 100vh;
+  padding-bottom: 3rem;
+
+  .hero-arrow {
+    position: absolute;
+    bottom: 5rem;
+  }
+}

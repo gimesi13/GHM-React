@@ -97,7 +97,7 @@ function Navbar({ i18n }) {
       animate={navbar ? shrink : grow}
     >
       <div className="navbar-left">
-        <div className="logo">LOGO</div>
+        <div className="logo">GUESTHOUSE MITTERBACH</div>
         Left
       </div>
       <div className="navbar-right">
