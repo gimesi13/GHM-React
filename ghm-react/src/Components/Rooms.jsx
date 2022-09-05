@@ -2,15 +2,15 @@ import React from "react";
 
 function Rooms() {
   return (
-    <section>
-      <div className="rooms">
+    <section className="rooms">
+      <div className="rooms-container">
         <h1>ROOMS</h1>
-        <div>
+        <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nemo
           praesentium recusandae. Porro non a nemo. Officia aspernatur vel
           minima, vero, molestias nesciunt explicabo eligendi, soluta
           accusantium praesentium doloribus fugit!
-        </div>
+        </p>
         <div className="room-cards">
           <div className="card">room cards</div>
           <div className="card">room cards</div>

@@ -4,7 +4,7 @@ function About() {
   return (
     <section className="about">
       <div className="rounded-container abt">
-        <h1>ABOUT</h1>
+        <h1>ABOUT US</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
           maiores autem optio nostrum, neque ipsum eveniet nemo voluptate
@@ -12,6 +12,7 @@ function About() {
           doloribus nulla, perferendis maxime sint officiis?
         </p>
       </div>
+      <div className="image">image</div>
     </section>
   );
 }

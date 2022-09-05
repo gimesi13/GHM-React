@@ -16,11 +16,31 @@
 */
 
 .location {
+  background: lightcoral;
   margin-bottom: -2rem;
   gap: 2rem;
+  //laptop//
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  .loc {
+    //tablet//
+    @media (min-width: 576px) {
+      width: 70%;
+    }
+    //laptop//
+    @media (min-width: 768px) {
+      width: 60%;
+    }
+    //desktop//
+    @media (min-width: 992px) {
+      width: 50%;
+    }
 
-  .map {
-    background: lightgreen;
-    height: 8rem;
+    .map {
+      background: lightgreen;
+      height: 8rem;
+    }
   }
 }

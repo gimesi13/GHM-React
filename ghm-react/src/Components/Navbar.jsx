@@ -16,7 +16,7 @@ const menuItems = [
 /* variants */
 const animateMenu = {
   hidden: {
-    clipPath: "circle(50% at 50% -50%)",
+    clipPath: "circle(0% at 50% -70%)",
     transition: {
       type: "tween",
       duration: 1,
@@ -96,17 +96,14 @@ function Navbar({ i18n }) {
       initial={false}
       animate={navbar ? shrink : grow}
     >
-      <div className="navbar-left">
+      <div className="navbar-left"></div>
+      <div className="navbar-middle">
         <div className="logo">GUESTHOUSE MITTERBACH</div>
-        Left
+        <p>-youth hostel-</p>
       </div>
+
       <div className="navbar-right">
-        <select className="language" name="language" onChange={handleChange}>
-          <option value="en">English</option>
-          <option value="ge">German</option>
-          <option value="hu">Hungarian</option>
-        </select>
-        Right
+        <div className="book-now-btn">BOOK NOW</div>
       </div>
       <div className="hamburger-menu" onClick={handleClick}>
         {isOpen ? (
@@ -140,6 +137,11 @@ function Navbar({ i18n }) {
           </motion.div>
         )}
       </AnimatePresence>
+      <select className="language" name="language" onChange={handleChange}>
+        <option value="en">English</option>
+        <option value="ge">German</option>
+        <option value="hu">Hungarian</option>
+      </select>
     </motion.div>
   );
 }

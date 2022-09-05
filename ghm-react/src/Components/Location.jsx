@@ -3,7 +3,7 @@ import React from "react";
 function Location() {
   return (
     <section className="location">
-      <div className="rounded-container">
+      <div className="rounded-container loc">
         <h1>LOCATION</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque

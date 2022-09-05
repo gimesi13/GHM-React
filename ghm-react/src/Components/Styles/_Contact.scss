@@ -16,15 +16,36 @@
 */
 
 .contact {
-  background: white;
-  @include flexCenter;
-  flex-direction: column;
-  padding: 1rem;
-  gap: 2rem;
-
-  .contact-form {
-    background: lightgreen;
+  .contact-container {
+    background: white;
+    @include flexCenter;
+    flex-direction: column;
+    gap: 2rem;
     width: 100%;
-    height: 15rem;
+
+    .contact-info {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      @include flexCenter;
+      flex-direction: column;
+      gap: 2rem;
+      //laptop//
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+
+      .image {
+        background: lightgrey;
+        width: 15rem;
+        height: 10rem;
+        transform: translateY(0);
+      }
+
+      .contact-form {
+        background: lightgreen;
+        height: 15rem;
+        flex: 1;
+      }
+    }
   }
 }

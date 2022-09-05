@@ -16,22 +16,53 @@
 */
 
 .slopes {
-  background: white;
-  @include flexCenter;
-  flex-direction: column;
-  padding: 1rem;
-  gap: 2rem;
-  padding-bottom: 5rem;
-
-  .slope-cards {
-    display: grid;
-    grid-template-columns: 1fr;
+  .slopes-container {
+    background: white;
+    @include flexCenter;
+    flex-direction: column;
+    width: 100%;
     gap: 2rem;
+    padding-bottom: 5rem;
 
-    .card {
-      background: lightgreen;
-      width: 15rem;
-      height: 10rem;
+    p {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      //tablet//
+      @media (min-width: 576px) {
+        width: 80%;
+      }
+      //laptop//
+      @media (min-width: 768px) {
+      }
+      //desktop//
+      @media (min-width: 992px) {
+        width: 70%;
+      }
+      //large//
+      @media (min-width: 1200px) {
+      }
+    }
+
+    .slope-cards {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      //laptop//
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+      }
+      //large//
+      @media (min-width: 1200px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      .card {
+        background: lightgreen;
+        width: 15rem;
+        height: 10rem;
+      }
     }
   }
 }

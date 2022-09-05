@@ -26,31 +26,73 @@
   height: $navbarHeight;
   width: 100%;
 
+  /* LEFT SECTION */
   .navbar-left {
+    display: none;
+    //laptop//
+    @media (min-width: 768px) {
+      @include flexCenter;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  /* MIDDLE SECTION */
+  .navbar-middle {
     background: lightgreen;
     @include flexCenter;
+    flex-direction: column;
     width: 100%;
     height: 100%;
-  }
+    flex: 1;
+    gap: 10%;
+    //tablet//
+    @media (min-width: 576px) {
+      white-space: nowrap;
+    }
 
-  .navbar-right {
-    background: lightgrey;
-    @include flexCenter;
-    width: 100%;
-    height: 100%;
-
-    .language {
+    p {
       display: none;
+      @media (min-width: 576px) {
+        display: block;
+      }
     }
   }
 
+  /* RIGHT SECTION */
+  .navbar-right {
+    background: lightgrey;
+    @include flexCenter;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .book-now-btn {
+      background: black;
+      color: white;
+      align-self: flex-end;
+      padding: 1rem;
+      margin-right: 1rem;
+      display: none;
+      //laptop//
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+  }
+
+  /* HM */
   .hamburger-menu {
     z-index: 10;
     @include flexCenter;
     background: lightpink;
-    position: fixed;
+    position: absolute;
     right: 0.5rem;
-    top: 0.5rem;
+    //laptop//
+    @media (min-width: 768px) {
+      left: 1rem;
+      right: auto;
+    }
 
     div {
       @include flexCenter;
@@ -70,7 +112,11 @@
     left: 0;
     bottom: 0;
     @include flexCenter;
-    padding-top: $navbarHeight;
+    padding-top: 2rem;
+    @media (min-width: 768px) {
+      right: auto;
+      bottom: auto;
+    }
 
     ul {
       @include flexCenter;
@@ -78,14 +124,24 @@
       justify-content: space-around;
       align-items: flex-start;
       width: 100%;
-      height: 100%;
-      font-size: 3rem;
+      min-height: 100%;
+      font-size: 6vh;
       list-style-type: none;
       padding: 0;
       padding-left: 1rem;
-
-      li {
+      padding-right: 1rem;
+      @media (max-height: 400px) {
       }
+    }
+  }
+
+  /* LANG */
+  .language {
+    position: absolute;
+    right: 4rem;
+    @media (min-width: 768px) {
+      left: 5rem;
+      right: auto;
     }
   }
 }
