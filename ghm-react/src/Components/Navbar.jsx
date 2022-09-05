@@ -99,7 +99,7 @@ function Navbar({ i18n }) {
       <div className="navbar-left"></div>
       <div className="navbar-middle">
         <div className="logo">GUESTHOUSE MITTERBACH</div>
-        <p>-youth hostel-</p>
+        <div className="youth-hostel">-youth hostel-</div>
       </div>
 
       <div className="navbar-right">

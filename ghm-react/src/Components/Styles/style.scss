@@ -7,6 +7,7 @@
 @import "./Slopes";
 @import "./Gallery";
 @import "./Contact";
+@import "./Footer";
 
 /* BREAKPOINTS
 //tablet//
@@ -56,13 +57,40 @@ section {
   width: 90%;
   border-radius: 3rem;
   text-align: center;
-
-  h1 {
-    margin: 0;
-    padding: 1rem;
+}
+h1 {
+  margin: 0;
+  padding: 1rem;
+  //tablet//
+  @media (min-width: 576px) {
+    font-size: 2rem;
   }
-  p {
-    padding: 1rem;
+  //laptop//
+  @media (min-width: 768px) {
+  }
+  //desktop//
+  @media (min-width: 992px) {
+  }
+  //large//
+  @media (min-width: 1200px) {
+    font-size: 3rem;
+  }
+}
+p {
+  padding: 1rem;
+  //tablet//
+  @media (min-width: 576px) {
+    font-size: 1.2rem;
+  }
+  //laptop//
+  @media (min-width: 768px) {
+  }
+  //desktop//
+  @media (min-width: 992px) {
+  }
+  //large//
+  @media (min-width: 1200px) {
+    font-size: 1.5rem;
   }
 }
 

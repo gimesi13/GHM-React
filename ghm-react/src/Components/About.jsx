@@ -11,6 +11,7 @@ function About() {
           similique consequuntur asperiores accusantium libero. Voluptate
           doloribus nulla, perferendis maxime sint officiis?
         </p>
+        <div className="image1">asd</div>
       </div>
       <div className="image">image</div>
     </section>

@@ -7,6 +7,7 @@ function Gallery() {
         <h1>GALLERY</h1>
         <div className="slider">slider</div>
       </div>
+      <div className="image"></div>
     </section>
   );
 }
