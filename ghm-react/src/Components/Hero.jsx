@@ -1,14 +1,16 @@
 import React from "react";
 import { Parallax, Background } from "react-parallax";
-import landing from "./Pictures/landing-large.webp";
+import landing from "./Pictures/landing-small.webp";
 
 function Hero({ t }) {
   return (
     <Parallax
       className="parallax-main"
       bgImage={landing}
+      contentClassName="parallaximg" //
       bgImageStyle={{
         objectFit: "cover",
+        width: "100%",
         height: "100%",
       }}
       strength={300}

@@ -28,3 +28,13 @@
     bottom: 5rem;
   }
 }
+
+.react-parallax-bgimage {
+  content: url("../Pictures/landing-small.webp");
+  @media (min-width: 576px) {
+    content: url("../Pictures/landing-large.webp");
+    @media (min-width: 992px) {
+      content: url("../Pictures/landing-XL.webp");
+    }
+  }
+}
