@@ -1,4 +1,6 @@
 import { useState, Suspense } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Rooms from "./Components/Rooms";
@@ -11,6 +13,7 @@ import { initReactI18next, useTranslation } from "react-i18next";
 import Gallery from "./Components/Gallery";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import Book from "./Components/Book";
 
 /* LANGUAGES */
 const translationsEn = { welcome: "Welcome!!!" };
@@ -32,24 +35,36 @@ i18n
 /* LANGUAGES END */
 
 function App() {
+  /* STATES */
+
   /* useTranslation hook */
   const { t } = useTranslation();
 
   return (
-    /* display loading while loading */
-    <Suspense fallback="Loading...">
-      <div className="App">
-        <Navbar i18n={i18n} />
-        <Hero t={t} />
-        <About />
-        <Rooms />
-        <Location />
-        <Slopes />
-        <Gallery />
-        <Contact />
-        <Footer />
-      </div>
-    </Suspense>
+    /* Router component around the main component to allow react router */
+    <Router>
+      {/* display loading while loading  */}
+      <Suspense fallback="Loading...">
+        <div className="App">
+          <Switch>
+            <Route exact path="/">
+              <Navbar i18n={i18n} />
+              <Hero t={t} />
+              <About />
+              <Rooms />
+              <Location />
+              <Slopes />
+              <Gallery />
+              <Contact />
+              <Footer />
+            </Route>
+            <Route exact path="/book">
+              <Book />
+            </Route>
+          </Switch>
+        </div>
+      </Suspense>
+    </Router>
   );
 }
 

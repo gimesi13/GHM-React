@@ -20,7 +20,9 @@
   height: calc(100vh - 6rem);
   min-height: 100vh;
   padding-bottom: 3rem;
-
+  .parallax-image {
+    position: fixed;
+  }
   .hero-arrow {
     position: absolute;
     bottom: 5rem;

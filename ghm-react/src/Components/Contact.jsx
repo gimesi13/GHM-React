@@ -3,6 +3,7 @@ import React from "react";
 function Contact() {
   return (
     <section className="contact">
+      <span className="hash" id="contact"></span>
       <div className="contact-container">
         <h1>CONTACT</h1>
         <div className="contact-info">

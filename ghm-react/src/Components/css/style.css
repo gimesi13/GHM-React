@@ -57,7 +57,7 @@
   }
 }
 .navbar .navbar-middle {
-  background: lightgreen;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,7 +92,6 @@
   }
 }
 .navbar .navbar-right {
-  background: lightgrey;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,6 +124,7 @@
   }
 }
 .navbar .hamburger-menu {
+  color: white;
   z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,7 +135,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: lightpink;
+  background: black;
+  border-radius: 50%;
+  padding: 0.5rem;
   position: absolute;
   right: 0.5rem;
 }
@@ -245,6 +247,9 @@
   height: calc(100vh - 6rem);
   min-height: 100vh;
   padding-bottom: 3rem;
+}
+.hero .parallax-image {
+  position: fixed;
 }
 .hero .hero-arrow {
   position: absolute;
@@ -778,4 +783,28 @@ p {
 
 p {
   margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.hash {
+  margin-top: -64px;
+  padding-bottom: 64px;
+  display: block;
+}
+
+.try {
+  padding-top: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=style.css.map */

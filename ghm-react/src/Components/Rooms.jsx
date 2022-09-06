@@ -3,6 +3,7 @@ import React from "react";
 function Rooms() {
   return (
     <section className="rooms">
+      <span className="hash" id="rooms"></span>
       <div className="rooms-container">
         <h1>ROOMS</h1>
         <p>

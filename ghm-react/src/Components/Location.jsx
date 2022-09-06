@@ -4,6 +4,8 @@ function Location() {
   return (
     <section className="location">
       <div className="rounded-container loc">
+        <span className="hash" id="location"></span>
+
         <h1>LOCATION</h1>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque

@@ -3,6 +3,7 @@ import React from "react";
 function Slopes() {
   return (
     <section className="slopes">
+      <span className="hash" id="slopes"></span>
       <div className="slopes-container">
         <h1>SLOPES</h1>
         <p>

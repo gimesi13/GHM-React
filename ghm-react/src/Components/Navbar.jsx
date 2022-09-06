@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import OutsideClick from "detect-outside-click-react";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { CgMenu, CgClose } from "react-icons/cg";
 
 const menuItems = [
   { name: "Home", href: "#home" },
-  { name: "Rooms", href: "#rooms" },
   { name: "About Us", href: "#about" },
+  { name: "Rooms", href: "#rooms" },
   { name: "Location", href: "#location" },
   { name: "Slopes", href: "#slopes" },
   { name: "Gallery", href: "#gallery" },
@@ -103,7 +106,9 @@ function Navbar({ i18n }) {
       </div>
 
       <div className="navbar-right">
-        <div className="book-now-btn">BOOK NOW</div>
+        <div className="book-now-btn">
+          <NavLink to="/book">BOOK NOW</NavLink>
+        </div>
       </div>
       <div className="hamburger-menu" onClick={handleClick}>
         {isOpen ? (
@@ -116,27 +121,43 @@ function Navbar({ i18n }) {
           </motion.div>
         )}
       </div>
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            className="nav-menu-items"
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            variants={animateMenu}
-          >
-            <ul>
-              {menuItems.map((item) => {
-                return (
-                  <motion.li key={item.name} variants={animateMenuItems}>
-                    {item.name}
-                  </motion.li>
-                );
-              })}
-            </ul>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <OutsideClick
+        close={() => {
+          isOpen && setIsOpen(false);
+        }}
+      >
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              className="nav-menu-items"
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              variants={animateMenu}
+            >
+              <ul>
+                {menuItems.map((item) => {
+                  return (
+                    <motion.li key={item.name} variants={animateMenuItems}>
+                      <HashLink
+                        onClick={() => {
+                          isOpen && setIsOpen(false);
+                        }}
+                        to={item.href}
+                        smooth
+                        className="link"
+                      >
+                        {item.name}
+                      </HashLink>
+                    </motion.li>
+                  );
+                })}
+              </ul>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </OutsideClick>
+
       <select className="language" name="language" onChange={handleChange}>
         <option value="en">English</option>
         <option value="ge">German</option>

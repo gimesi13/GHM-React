@@ -104,3 +104,19 @@ p {
 p {
   margin: 0;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.hash {
+  margin-top: -64px;
+  padding-bottom: 64px;
+  display: block;
+}
+
+.try {
+  padding-top: 60rem;
+  @include flexCenter;
+}

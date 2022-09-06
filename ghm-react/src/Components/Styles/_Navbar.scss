@@ -38,7 +38,7 @@
   }
   /* MIDDLE SECTION */
   .navbar-middle {
-    background: lightgreen;
+    color: white;
     @include flexCenter;
     flex-direction: column;
     width: 100%;
@@ -60,7 +60,6 @@
 
   /* RIGHT SECTION */
   .navbar-right {
-    background: lightgrey;
     @include flexCenter;
     flex-direction: column;
     width: 100%;
@@ -83,9 +82,12 @@
 
   /* HM */
   .hamburger-menu {
+    color: white;
     z-index: 10;
     @include flexCenter;
-    background: lightpink;
+    background: black;
+    border-radius: 50%;
+    padding: 0.5rem;
     position: absolute;
     right: 0.5rem;
     //laptop//

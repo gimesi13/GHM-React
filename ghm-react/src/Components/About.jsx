@@ -4,6 +4,7 @@ function About() {
   return (
     <section className="about">
       <div className="rounded-container abt">
+        <span className="hash" id="about"></span>
         <h1>ABOUT US</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos
