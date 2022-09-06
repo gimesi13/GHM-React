@@ -1,4 +1,5 @@
 import React from "react";
+import dog from "./Pictures/undraw-dog.svg";
 
 function About() {
   return (
@@ -14,7 +15,9 @@ function About() {
         </p>
         <div className="image1">asd</div>
       </div>
-      <div className="image">image</div>
+      <div className="image">
+        <img alt="diner" src={dog}></img>
+      </div>
     </section>
   );
 }

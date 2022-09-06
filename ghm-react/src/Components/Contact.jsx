@@ -7,7 +7,12 @@ function Contact() {
       <div className="contact-container">
         <h1>CONTACT</h1>
         <div className="contact-info">
-          <div className="image"></div>
+          <div className="image">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
+              vitae.
+            </p>
+          </div>
 
           <div className="contact-form">
             <p>

@@ -1,4 +1,5 @@
 import React from "react";
+import locationSVG from "./Pictures/undraw-location.svg";
 
 function Location() {
   return (
@@ -16,7 +17,9 @@ function Location() {
         <div className="map">map</div>
       </div>
 
-      <div className="image img1">image</div>
+      <div className="image img1">
+        <img alt="location" src={locationSVG} />
+      </div>
     </section>
   );
 }

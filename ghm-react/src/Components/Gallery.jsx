@@ -1,4 +1,5 @@
 import React from "react";
+import gallerySVG from "./Pictures/undraw-gallery.svg";
 
 function Gallery() {
   return (
@@ -8,7 +9,9 @@ function Gallery() {
         <h1>GALLERY</h1>
         <div className="slider">slider</div>
       </div>
-      <div className="image"></div>
+      <div className="image">
+        <img alt="gallery" src={gallerySVG} />
+      </div>
     </section>
   );
 }

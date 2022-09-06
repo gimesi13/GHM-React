@@ -1,6 +1,6 @@
 import React from "react";
 import { Parallax, Background } from "react-parallax";
-import landing from "./Pictures/landing-large.png";
+import landing from "./Pictures/landing-large.webp";
 
 function Hero({ t }) {
   return (
