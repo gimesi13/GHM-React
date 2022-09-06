@@ -13,7 +13,6 @@ const menuItems = [
   { name: "Slopes", href: "#slopes" },
   { name: "Gallery", href: "#gallery" },
   { name: "Contact", href: "#contact" },
-  { name: "Languages", href: "#languages" },
 ];
 
 /* variants */
@@ -62,7 +61,7 @@ function Navbar({ i18n }) {
   // navbar on scroll behavior
   const handleNavBarScroll = () => {
     if (window.scrollY >= 1) {
-      setNavbar(true);
+      !navbar && setNavbar(true);
     } else {
       setNavbar(false);
     }

@@ -163,7 +163,8 @@
   height: 2.5rem;
 }
 .navbar .nav-menu-items {
-  background: lightcyan;
+  z-index: 9;
+  background: black;
   position: fixed;
   top: 0;
   right: 0;
@@ -184,6 +185,8 @@
   .navbar .nav-menu-items {
     right: auto;
     bottom: auto;
+    border-bottom-right-radius: 5rem;
+    padding: 2rem;
   }
 }
 .navbar .nav-menu-items ul {

@@ -107,7 +107,8 @@
   }
 
   .nav-menu-items {
-    background: lightcyan;
+    z-index: 9;
+    background: black;
     position: fixed;
     top: 0;
     right: 0;
@@ -118,6 +119,9 @@
     @media (min-width: 768px) {
       right: auto;
       bottom: auto;
+      border-bottom-right-radius: 5rem;
+
+      padding: 2rem;
     }
 
     ul {
