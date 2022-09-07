@@ -9,9 +9,12 @@ function Hero({ t }) {
       bgImage={landing}
       contentClassName="parallaximg" //
       bgImageStyle={{
-        objectFit: "cover",
-        width: "100%",
         height: "100%",
+        width: "100%",
+        objectFit: "cover",
+        transition: "0s ease-in-out",
+        transitionProperty: "background-position",
+        backgroundAttachment: "fixed",
       }}
       strength={300}
     >
@@ -19,7 +22,7 @@ function Hero({ t }) {
         <span className="hash" id="home"></span>
         <h1>{t("welcome")}</h1>
         <p>asd</p>
-        <div className="hero-arrow">arrow</div>{" "}
+        <div className="hero-arrow">arrow</div>
       </section>
     </Parallax>
   );

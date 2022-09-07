@@ -1,5 +1,44 @@
 import React from "react";
+/* import Slider from "./Slider"; */
 import dog from "./Pictures/undraw-dog.svg";
+/* import {
+  TbBrandAirbnb,
+  TbBrandBooking,
+  TbBrandFacebook,
+  TbBrandInstagram,
+} from "react-icons/tb";
+import rv1 from "./Pictures/paul-review.PNG";
+import rv2 from "./Pictures/florian-review.png";
+import rv3 from "./Pictures/grant-review.PNG";
+import rv4 from "./Pictures/sonja-review.PNG";
+
+//images array
+const images = [
+  { img: <img alt="" src={rv1} />, name: "1" },
+  { img: <img alt="" src={rv2} />, name: "2" },
+  { img: <img alt="" src={rv3} />, name: "3" },
+  { img: <img alt="" src={rv4} />, name: "4" },
+];
+
+//breakpoints for the carousel slider
+const breakPoints = [
+  {
+    width: 1,
+    itemsToShow: 1,
+  },
+  {
+    width: 800,
+    itemsToShow: 2,
+  },
+  {
+    width: 992,
+    itemsToShow: 4,
+  },
+  {
+    width: 1200,
+    itemsToShow: 5,
+  },
+]; */
 
 function About() {
   return (
@@ -15,7 +54,9 @@ function About() {
           quas molestias perferendis fugit obcaecati cupiditate quaerat eos
           dolorum dolorem delectus m
         </p>
-        <div className="image1">asd</div>
+        {/* <div className="slider-abt">
+          <Slider images={images} breakPoints={breakPoints}></Slider>
+        </div> */}
       </div>
       <div className="image">
         <img alt="diner" src={dog}></img>

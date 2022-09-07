@@ -40,7 +40,17 @@
 
     .map {
       background: lightgreen;
-      height: 8rem;
+      height: 20rem;
+      width: 100%;
+      //tablet//
+      @media (min-width: 576px) {
+        height: 25rem;
+      }
+
+      //large//
+      @media (min-width: 1200px) {
+        height: 35rem;
+      }
     }
   }
 }

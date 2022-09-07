@@ -1,5 +1,6 @@
 import React from "react";
 import locationSVG from "./Pictures/undraw-location.svg";
+import GoogleMaps from "./GoogleMaps";
 
 function Location() {
   return (
@@ -14,7 +15,9 @@ function Location() {
           perspiciatis aspernatur, atque fugiat ea sed quia recusandae quae?
           Voluptatibus, tempora! Praesentium?
         </p>
-        <div className="map">map</div>
+        <div className="map">
+          <GoogleMaps />
+        </div>
       </div>
 
       <div className="image img1">

@@ -1,4 +1,36 @@
 import React from "react";
+import Room from "./Room";
+import doubleroom from "./Pictures/room-double.jpg";
+import room4 from "./Pictures/room-4.jpg";
+import room6 from "./Pictures/room-6.jpg";
+import room8 from "./Pictures/room-8.jpg";
+
+const rooms = [
+  {
+    name: "Double Bedrooms",
+    price: "From €25.-*",
+    picture: doubleroom,
+    capacity: "2",
+  },
+  {
+    name: "4-bed Dormitory Room:",
+    price: "From €20.-*",
+    picture: room4,
+    capacity: "4",
+  },
+  {
+    name: "6-bed Dormitory Rooms:",
+    price: "From €20.-*",
+    picture: room6,
+    capacity: "6",
+  },
+  {
+    name: "8-bed Dormitory Room:",
+    price: "From €20.-*",
+    picture: room8,
+    capacity: "8",
+  },
+];
 
 function Rooms() {
   return (
@@ -13,10 +45,17 @@ function Rooms() {
           accusantium praesentium doloribus fugit!
         </p>
         <div className="room-cards">
-          <div className="card">room cards</div>
-          <div className="card">room cards</div>
-          <div className="card">room cards</div>
-          <div className="card">room cards</div>
+          {rooms.map((room) => {
+            return (
+              <Room
+                key={room.name}
+                name={room.name}
+                price={room.price}
+                picture={room.picture}
+                capacity={room.capacity}
+              />
+            );
+          })}
         </div>
       </div>
     </section>
