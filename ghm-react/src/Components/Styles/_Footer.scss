@@ -16,5 +16,27 @@
 */
 
 .footer {
-  height: 5rem;
+  background-color: black;
+  color: white;
+  height: 6rem;
+  @include flexCenter;
+  flex-direction: row;
+  overflow: hidden;
+
+  .footer-left {
+    @include flexCenter;
+
+    .up-arrow-svg {
+      font-size: 4rem;
+      margin-left: 1rem;
+    }
+  }
+
+  .footer-right {
+    @include flexCenter;
+    align-items: flex-end;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+  }
 }

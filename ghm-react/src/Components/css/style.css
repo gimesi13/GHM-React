@@ -646,9 +646,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: grey;
   width: 100%;
-  height: 8rem;
+  overflow: hidden;
+}
+.gallery .glr .slider img {
+  max-height: 80vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .glr .slider .prev-btn {
+  position: absolute;
+  left: 0.5rem;
+}
+.gallery .glr .slider .next-btn {
+  position: absolute;
+  right: 0.5rem;
 }
 
 /* MIXINS */
@@ -744,7 +757,60 @@
 } 
 */
 .footer {
-  height: 5rem;
+  background-color: black;
+  color: white;
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+}
+.footer .footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .footer-left .up-arrow-svg {
+  font-size: 4rem;
+  margin-left: 1rem;
+}
+.footer .footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
 }
 
 /* @import "./Slider"; */
@@ -835,6 +901,7 @@
 */
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
