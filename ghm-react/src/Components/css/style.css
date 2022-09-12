@@ -699,8 +699,6 @@
   padding-bottom: 2rem;
 }
 .contact .contact-container .contact-info {
-  padding-left: 2rem;
-  padding-right: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,20 +723,89 @@
   }
 }
 .contact .contact-container .contact-info .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   background: lightgrey;
-  width: 15rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   height: 10rem;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.contact .contact-container .contact-info .contact-form {
-  background: lightgreen;
-  height: 15rem;
+.contact .contact-container .contact-info .contact-right {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: lightgreen;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
-
+.contact .contact-container .contact-info .contact-right .contact-right-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.contact .contact-container .contact-info .contact-right .contact-right-name input {
+  height: 2rem;
+  width: 100%;
+}
+.contact .contact-container .contact-info .contact-right .contact-right-email-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.contact .contact-container .contact-info .contact-right .contact-right-email-phone input {
+  height: 2rem;
+  width: 100%;
+}
+.contact .contact-container .contact-info .contact-right .contact-right-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+.contact .contact-container .contact-info .contact-right .contact-right-message textarea {
+  min-height: 8rem;
+  font-family: Roboto;
+  width: 100%;
+}
 /* MIXINS */
 /* VARIABLES */
 /* BREAKPOINTS
@@ -903,6 +970,9 @@
 } 
 */
 .book {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;

@@ -17,7 +17,14 @@ function Book() {
       </p>
 
       <div className="booking-card">
-        <img src={thumbnail} alt="" />
+        <a
+          href="https://forms.gle/DE3GSpYPo9k7qu567"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={thumbnail} alt="" />
+        </a>
+
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto?{" "}
           <span>lnik</span> <span>lnik</span>
