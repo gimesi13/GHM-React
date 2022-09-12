@@ -56,11 +56,11 @@ function App() {
               <Slopes />
               <Gallery />
               <Contact />
-              <Footer />
+              <Footer route={"main"} />
             </Route>
             <Route exact path="/book">
               <Book />
-              <Footer />
+              <Footer route={"book"} />
             </Route>
           </Switch>
         </div>

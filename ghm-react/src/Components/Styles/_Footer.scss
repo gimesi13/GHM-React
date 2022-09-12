@@ -16,14 +16,13 @@
 */
 
 .footer {
-  position: fixed;
-  bottom: 0;
   background-color: black;
   color: white;
   height: 6rem;
   @include flexCenter;
   flex-direction: row;
   overflow: hidden;
+  align-self: flex-end;
 
   .footer-left {
     @include flexCenter;

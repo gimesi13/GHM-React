@@ -13,6 +13,7 @@ const menuItems = [
   { name: "Slopes", href: "#slopes" },
   { name: "Gallery", href: "#gallery" },
   { name: "Contact", href: "#contact" },
+  { name: "Book Now", href: "/book" },
 ];
 
 /* variants */

@@ -32,6 +32,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
   background: lightblue;
   margin: 0;
@@ -40,6 +43,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 code {

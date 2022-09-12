@@ -20,7 +20,7 @@ function Book() {
         <img src={thumbnail} alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto?{" "}
-          <spam>lnik</spam> <spam>lnik</spam>
+          <span>lnik</span> <span>lnik</span>
         </p>
       </div>
     </section>

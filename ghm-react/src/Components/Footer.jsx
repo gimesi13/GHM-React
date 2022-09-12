@@ -1,14 +1,20 @@
 import React from "react";
 import { BsArrowUpCircleFill } from "react-icons/bs";
 
-function Footer() {
+function Footer({ route }) {
   return (
     <section className="footer">
       <div className="footer-left">
         <div className="arrow-up">
-          <a href="#home">
-            <BsArrowUpCircleFill className="up-arrow-svg" />
-          </a>
+          {route === "main" && (
+            <div
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+            >
+              <BsArrowUpCircleFill className="up-arrow-svg" />
+            </div>
+          )}
         </div>
       </div>
       <div className="footer-right">
