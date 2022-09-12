@@ -101,7 +101,10 @@ function Navbar({ i18n }) {
     >
       <div className="navbar-left"></div>
       <div className="navbar-middle">
-        <div className="logo">GUESTHOUSE MITTERBACH</div>
+        <a href="#home">
+          <div className="logo">GUESTHOUSE MITTERBACH</div>
+        </a>
+
         <div className="youth-hostel">-youth hostel-</div>
       </div>
 

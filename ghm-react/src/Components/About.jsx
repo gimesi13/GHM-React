@@ -54,9 +54,7 @@ function About() {
           quas molestias perferendis fugit obcaecati cupiditate quaerat eos
           dolorum dolorem delectus m
         </p>
-        {/* <div className="slider-abt">
-          <Slider images={images} breakPoints={breakPoints}></Slider>
-        </div> */}
+        <div className="slider-abt">asd</div>
       </div>
       <div className="image">
         <img alt="diner" src={dog}></img>

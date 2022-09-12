@@ -77,10 +77,16 @@
       -ms-flex: 1;
           flex: 1;
   gap: 10%;
+  margin-left: 1rem;
 }
 @media (min-width: 576px) {
   .navbar .navbar-middle {
     white-space: nowrap;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .navbar-middle {
+    margin-left: 0;
   }
 }
 .navbar .navbar-middle .youth-hostel {
@@ -217,7 +223,8 @@
 }
 .navbar .language {
   position: absolute;
-  right: 4rem;
+  right: 4.5rem;
+  width: 41px;
 }
 @media (min-width: 768px) {
   .navbar .language {
@@ -586,6 +593,9 @@
 .slopes .slopes-container .slope-cards .slope .slope-info .slope-name {
   font-weight: bold;
   color: black;
+}
+.slopes a {
+  color: blue;
 }
 
 /* MIXINS */

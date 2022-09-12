@@ -45,9 +45,14 @@
     height: 100%;
     flex: 1;
     gap: 10%;
+    margin-left: 1rem;
     //tablet//
     @media (min-width: 576px) {
       white-space: nowrap;
+    }
+    //laptop//
+    @media (min-width: 768px) {
+      margin-left: 0;
     }
 
     .youth-hostel {
@@ -144,7 +149,8 @@
   /* LANG */
   .language {
     position: absolute;
-    right: 4rem;
+    right: 4.5rem;
+    width: 41px;
     @media (min-width: 768px) {
       left: 5rem;
       right: auto;

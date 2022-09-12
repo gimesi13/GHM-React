@@ -8,19 +8,19 @@ const slopes = [
     name: "Gemeindealple (Mitterbach)",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nem praesentium recusandae. Porro non a nemo. Officia aspernatur vel minima, vero, molestias nesciunt explicabo eligendi, soluta",
     picture: gemeindealpe,
-    link: "link",
+    link: "https://www.gemeindealpe.at/",
   },
   {
     name: "Mariazell",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nem praesentium recusandae. Porro non a nemo. Officia aspernatur vel minima, vero, molestias nesciunt explicabo eligendi, soluta",
     picture: mariazell,
-    link: "link",
+    link: "https://www.mariazell.at/",
   },
   {
     name: "Annaberg",
     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nem praesentium recusandae. Porro non a nemo. Officia aspernatur vel minima, vero, molestias nesciunt explicabo eligendi, soluta",
     picture: annaberg,
-    link: "link",
+    link: "https://www.annaberg.info/",
   },
 ];
 
@@ -62,7 +62,9 @@ export function Slope({ name, picture, text, link }) {
       <div className="slope-info">
         <div className="slope-name">{name}</div>
         <div className="slope info">{text}</div>
-        {link}
+        <a href={link} target="_blank" rel="noreferrer">
+          {link}
+        </a>
       </div>
     </div>
   );

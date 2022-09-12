@@ -18,11 +18,15 @@ function Hero({ t }) {
       }}
       strength={300}
     >
-      <section className="hero">
-        <span className="hash" id="home"></span>
+      <section className="hero" id="home">
         <h1>{t("welcome")}</h1>
-        <p>asd</p>
-        <div className="hero-arrow">arrow</div>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. A non
+          dolorum modi, atque nam quas!
+        </p>
+        <a href="#about">
+          <button>Read more</button>
+        </a>
       </section>
     </Parallax>
   );

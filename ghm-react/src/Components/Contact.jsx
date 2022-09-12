@@ -49,7 +49,13 @@ function Contact() {
               <br></br>
               Mitterbach am Erlaufsee
               <br></br>
-              <button>Open Maps</button>
+              <a
+                href="https://www.google.com/maps/place/Guesthouse+Mitterbach/@47.8093901,15.2866635,17z/data=!3m1!4b1!4m8!3m7!1s0x4772042e7feef2bb:0x113db2ec0c0c4ba4!5m2!4m1!1i2!8m2!3d47.8094247!4d15.2889218"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button>Open Maps</button>
+              </a>
             </p>
           </div>
 
