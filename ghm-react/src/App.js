@@ -60,6 +60,7 @@ function App() {
             </Route>
             <Route exact path="/book">
               <Book />
+              <Footer />
             </Route>
           </Switch>
         </div>

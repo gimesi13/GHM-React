@@ -105,9 +105,9 @@ function Navbar({ i18n }) {
       </div>
 
       <div className="navbar-right">
-        <div className="book-now-btn">
-          <NavLink to="/book">BOOK NOW</NavLink>
-        </div>
+        <NavLink to="/book">
+          <div className="book-now-btn">BOOK NOW</div>
+        </NavLink>
       </div>
       <div className="hamburger-menu" onClick={handleClick}>
         {isOpen ? (
