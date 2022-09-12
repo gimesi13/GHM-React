@@ -16,7 +16,6 @@
 */
 .navbar {
   z-index: 10;
-  background: lightcoral;
   position: fixed;
   top: 0;
   right: 0;
@@ -32,6 +31,8 @@
           align-items: center;
   height: 6rem;
   width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   /* LEFT SECTION */
   /* MIDDLE SECTION */
   /* RIGHT SECTION */
@@ -231,6 +232,13 @@
     left: 5rem;
     right: auto;
   }
+}
+
+.shrink {
+  height: 4rem;
+  background: rgb(45, 45, 45);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 /* MIXINS */

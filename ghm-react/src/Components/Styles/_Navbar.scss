@@ -17,7 +17,6 @@
 
 .navbar {
   z-index: 10;
-  background: lightcoral;
   position: fixed;
   top: 0;
   right: 0;
@@ -25,6 +24,7 @@
   @include flexCenter;
   height: $navbarHeight;
   width: 100%;
+  transition: all 0.5s;
 
   /* LEFT SECTION */
   .navbar-left {
@@ -156,4 +156,10 @@
       right: auto;
     }
   }
+}
+
+.shrink {
+  height: calc($navbarHeight - 2rem);
+  background: rgb(45, 45, 45);
+  transition: all 0.5s;
 }

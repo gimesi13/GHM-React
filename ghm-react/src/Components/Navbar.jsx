@@ -72,11 +72,11 @@ function Navbar({ i18n }) {
 
   useEffect(() => {
     if (navbar === true) {
-      shrink.set({ height: 96, backgroundColor: "transparent" });
-      shrink.start({ height: 64, backgroundColor: "black" });
+      let nav = document.getElementById("navbar");
+      nav.classList.add("shrink");
     } else {
-      grow.set({ height: 64, backgroundColor: "black" });
-      grow.start({ height: 96, backgroundColor: "transparent" });
+      let nav = document.getElementById("navbar");
+      nav.classList.remove("shrink");
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navbar]);
@@ -94,11 +94,7 @@ function Navbar({ i18n }) {
   };
 
   return (
-    <motion.div
-      className="navbar"
-      initial={false}
-      animate={navbar ? shrink : grow}
-    >
+    <div className="navbar" id="navbar">
       <div className="navbar-left"></div>
       <div className="navbar-middle">
         <a href="#home">
@@ -166,7 +162,7 @@ function Navbar({ i18n }) {
         <option value="ge">German</option>
         <option value="hu">Hungarian</option>
       </select>
-    </motion.div>
+    </div>
   );
 }
 
