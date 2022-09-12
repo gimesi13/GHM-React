@@ -28,8 +28,12 @@
     @include flexCenter;
 
     .up-arrow-svg {
-      font-size: 4rem;
+      font-size: 3rem;
       margin-left: 1rem;
+      //desktop//
+      @media (min-width: 992px) {
+        font-size: 4rem;
+      }
     }
   }
 
@@ -39,5 +43,10 @@
     flex-direction: column;
     flex: 1;
     height: 100%;
+    padding-right: 1rem;
+
+    .social-links {
+      font-size: 2.5rem;
+    }
   }
 }

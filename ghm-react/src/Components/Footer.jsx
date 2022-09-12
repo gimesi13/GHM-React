@@ -1,5 +1,11 @@
 import React from "react";
 import { BsArrowUpCircleFill } from "react-icons/bs";
+import {
+  TbBrandAirbnb,
+  TbBrandBooking,
+  TbBrandFacebook,
+  TbBrandInstagram,
+} from "react-icons/tb";
 
 function Footer({ route }) {
   return (
@@ -18,7 +24,12 @@ function Footer({ route }) {
         </div>
       </div>
       <div className="footer-right">
-        <div className="social-links">link here</div>
+        <div className="social-links">
+          <TbBrandFacebook />
+          <TbBrandInstagram />
+          <TbBrandAirbnb />
+          <TbBrandBooking />
+        </div>
         <div>created by me</div>
       </div>
     </section>

@@ -61,10 +61,10 @@ function Navbar({ i18n }) {
 
   // navbar on scroll behavior
   const handleNavBarScroll = () => {
-    if (window.scrollY >= 1) {
+    if (window.scrollY >= 10) {
       !navbar && setNavbar(true);
     } else {
-      setNavbar(false);
+      navbar && setNavbar(false);
     }
   };
 

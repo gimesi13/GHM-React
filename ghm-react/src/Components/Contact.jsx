@@ -31,15 +31,30 @@ function Contact() {
       <div className="contact-container">
         <h1>CONTACT</h1>
         <div className="contact-info">
-          <div className="image">
+          <div className="contact-left">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae,
-              vitae.
+              Szecsei Dorottya
+              <br></br>
+              Tel.: +36307253984
+            </p>
+            <p>
+              Gimesi Gergely
+              <br></br>
+              Tel.: +36304939729
+            </p>
+            <p>
+              Location:
+              <br></br>
+              3224 Grabnersiedlung 2,
+              <br></br>
+              Mitterbach am Erlaufsee
+              <br></br>
+              <button>Open Maps</button>
             </p>
           </div>
 
           <form ref={form} onSubmit={sendEmail} className="contact-right">
-            <h1>Get In Touch</h1>
+            <h1>Contact Form:</h1>
             <div>
               <SiMinutemailer /> guesthousemitterbach@gmail.com
             </div>
