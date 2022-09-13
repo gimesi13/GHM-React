@@ -55,6 +55,10 @@
       margin-left: 0;
     }
 
+    .logo {
+      font-size: 1.5rem;
+    }
+
     .youth-hostel {
       display: none;
       @media (min-width: 576px) {
@@ -95,6 +99,7 @@
     padding: 0.5rem;
     position: absolute;
     right: 0.5rem;
+    cursor: pointer;
     //laptop//
     @media (min-width: 768px) {
       left: 1rem;

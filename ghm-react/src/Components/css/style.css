@@ -90,6 +90,9 @@
     margin-left: 0;
   }
 }
+.navbar .navbar-middle .logo {
+  font-size: 1.5rem;
+}
 .navbar .navbar-middle .youth-hostel {
   display: none;
 }
@@ -146,6 +149,7 @@
   padding: 0.5rem;
   position: absolute;
   right: 0.5rem;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .navbar .hamburger-menu {
@@ -1286,7 +1290,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-x: hidden;
-  background: lightblue;
+  background: black;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;

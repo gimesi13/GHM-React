@@ -19,11 +19,11 @@ const menuItems = [
 /* variants */
 const animateMenu = {
   hidden: {
-    clipPath: "circle(0% at 50% -70%)",
+    clipPath: "circle(0% at 50% -50%)",
     transition: {
       type: "tween",
       duration: 1,
-      delay: 0.4,
+      delay: 0.2,
       staggerChildren: 0.05,
     },
   },
@@ -88,9 +88,9 @@ function Navbar({ i18n }) {
 
   /* Menu click handler */
   const handleClick = () => {
+    setIsOpen(!isOpen);
     controlMenu.set({ scale: 0 });
     controlMenu.start({ scale: 1 });
-    setIsOpen(!isOpen);
   };
 
   return (
@@ -98,7 +98,7 @@ function Navbar({ i18n }) {
       <div className="navbar-left"></div>
       <div className="navbar-middle">
         <a href="#home">
-          <div className="logo">GUESTHOUSE MITTERBACH</div>
+          <div className="logo">Guesthouse Mitterbach</div>
         </a>
 
         <div className="youth-hostel">-youth hostel-</div>
@@ -106,10 +106,20 @@ function Navbar({ i18n }) {
 
       <div className="navbar-right">
         <NavLink to="/book">
-          <div className="book-now-btn">BOOK NOW</div>
+          <motion.div
+            className="book-now-btn"
+            whileHover={{ opacity: 0.7, borderRadius: "2rem" }}
+            whileTap={{ scale: 0.9 }}
+          >
+            BOOK NOW
+          </motion.div>
         </NavLink>
       </div>
-      <div className="hamburger-menu" onClick={handleClick}>
+      <motion.div
+        className="hamburger-menu"
+        onClick={handleClick}
+        whileTap={{ scale: 0.9 }}
+      >
         {isOpen ? (
           <motion.div animate={controlMenu}>
             <CgClose />
@@ -119,7 +129,7 @@ function Navbar({ i18n }) {
             <CgMenu />
           </motion.div>
         )}
-      </div>
+      </motion.div>
       <OutsideClick
         close={() => {
           isOpen && setIsOpen(false);
