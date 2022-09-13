@@ -1,16 +1,17 @@
 import React from "react";
-/* import Slider from "./Slider"; */
+import Slider from "./Slider";
 import dog from "./Pictures/undraw-dog.svg";
+import rv1 from "./Pictures/review1.png";
+import rv2 from "./Pictures/review2.png";
+import rv3 from "./Pictures/review3.png";
+import rv4 from "./Pictures/sonja-review.PNG";
+import rv5 from "./Pictures/paul-review.PNG";
 /* import {
   TbBrandAirbnb,
   TbBrandBooking,
   TbBrandFacebook,
   TbBrandInstagram,
 } from "react-icons/tb";
-import rv1 from "./Pictures/paul-review.PNG";
-import rv2 from "./Pictures/florian-review.png";
-import rv3 from "./Pictures/grant-review.PNG";
-import rv4 from "./Pictures/sonja-review.PNG";
 
 //images array
 const images = [
@@ -54,10 +55,15 @@ function About() {
           quas molestias perferendis fugit obcaecati cupiditate quaerat eos
           dolorum dolorem delectus m
         </p>
-        <div className="slider-abt">asd</div>
+        <div className="slider-abt">
+          <Slider
+            classNames="slider"
+            images={[rv1, rv2, rv3, rv4, rv5]}
+          ></Slider>
+        </div>
       </div>
       <div className="image">
-        <img alt="diner" src={dog}></img>
+        <img alt="dog" src={dog}></img>
       </div>
     </section>
   );

@@ -54,14 +54,14 @@ function Navbar({ i18n }) {
   const [isOpen, setIsOpen] = useState(false);
   const controlMenu = useAnimation();
   const [navbar, setNavbar] = useState(false);
-  const grow = useAnimation();
-  const shrink = useAnimation();
+  /*   const grow = useAnimation();
+  const shrink = useAnimation(); */
 
   /* FUNCTIONS */
 
   // navbar on scroll behavior
   const handleNavBarScroll = () => {
-    if (window.scrollY >= 10) {
+    if (window.scrollY >= 400) {
       !navbar && setNavbar(true);
     } else {
       navbar && setNavbar(false);

@@ -42,6 +42,12 @@
       display: none;
       @include flexCenter;
       width: 100%;
+
+      img {
+        border-radius: 1rem;
+        width: 90%;
+        max-width: 40rem;
+      }
     }
   }
 }

@@ -348,6 +348,11 @@
           align-items: center;
   width: 100%;
 }
+.about .abt .slider-abt img {
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 40rem;
+}
 
 /* MIXINS */
 /* VARIABLES */
@@ -927,7 +932,50 @@
   font-size: 2.5rem;
 }
 
-/* @import "./Slider"; */
+/* MIXINS */
+/* VARIABLES */
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+.slider img {
+  max-height: 80vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider .prev-btn {
+  position: absolute;
+  left: 0.5rem;
+}
+.slider .next-btn {
+  position: absolute;
+  right: 0.5rem;
+}
+
 /* MIXINS */
 /* VARIABLES */
 /* BREAKPOINTS

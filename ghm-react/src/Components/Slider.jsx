@@ -1,23 +1,30 @@
 import React, { useState } from "react";
-import Carousel from "react-elastic-carousel";
 
-function Slider({ images, breakPoints }) {
+/* SLIDER */
+export default function Slider({ images }) {
+  const [current, setCurrent] = useState(0);
+
+  /* FUNCTIONS */
+  const prev = () => {
+    setCurrent(current - 1);
+  };
+  const next = () => {
+    setCurrent(current + 1);
+  };
+
   return (
-    <div className="slider-container">
-      <Carousel className="slider" breakPoints={breakPoints}>
-        {images.map((image, i) => {
-          return (
-            <div className="slider-image" key={i}>
-              {image.img}
-              {/* <div key={image.name} className="slider-image-name">
-                {image.name}
-              </div> */}
-            </div>
-          );
-        })}
-      </Carousel>
+    <div className="slider">
+      <img alt="" className="main-img" src={images[current]} />
+      {current !== 0 && (
+        <button className="prev-btn" onClick={prev}>
+          prev
+        </button>
+      )}
+      {current !== images.length - 1 && (
+        <button className="next-btn" onClick={next}>
+          next
+        </button>
+      )}
     </div>
   );
 }
-
-export default Slider;
