@@ -17,7 +17,7 @@
 
 .rooms {
   .rooms-container {
-    background: white;
+    background: rgb(248, 248, 248);
     @include flexCenter;
     flex-direction: column;
     gap: 2rem;
@@ -25,6 +25,7 @@
     padding-bottom: 5rem;
 
     p {
+      text-align: center;
       padding-left: 2rem;
       padding-right: 2rem;
       //tablet//

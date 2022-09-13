@@ -17,7 +17,7 @@
 
 .contact {
   .contact-container {
-    background: white;
+    background: rgb(248, 248, 248);
     @include flexCenter;
     flex-direction: column;
     gap: 2rem;
@@ -31,17 +31,13 @@
       gap: 2rem;
       width: 100%;
       //laptop//
-      @media (min-width: 768px) {
+      //tablet//
+      @media (min-width: 576px) {
         flex-direction: row;
       }
 
-      .image {
-        flex: 1;
-        background: lightgrey;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        height: 10rem;
-        transform: translateY(0);
+      span {
+        font-weight: bold;
       }
 
       .contact-left {
@@ -54,9 +50,28 @@
         @include flexCenter;
         align-items: flex-start;
         flex-direction: column;
-        background: lightgreen;
         margin-left: 1rem;
         margin-right: 1rem;
+        //desktop//
+        @media (min-width: 992px) {
+          width: 30rem;
+        }
+
+        h1 {
+          padding: 0;
+          padding-bottom: 1rem;
+        }
+
+        .email-address {
+          padding-bottom: 0.5rem;
+          //desktop//
+          @media (min-width: 992px) {
+            font-size: 1.5rem;
+          }
+          @media (min-width: 1200px) {
+            font-size: 1.7rem;
+          }
+        }
 
         .contact-right-name {
           @include flexCenter;
@@ -64,6 +79,10 @@
           input {
             height: 2rem;
             width: 100%;
+            //desktop//
+            @media (min-width: 992px) {
+              height: 3rem;
+            }
           }
         }
 
@@ -72,8 +91,11 @@
           width: 100%;
           input {
             height: 2rem;
-
             width: 100%;
+            //desktop//
+            @media (min-width: 992px) {
+              height: 3rem;
+            }
           }
         }
 
@@ -84,12 +106,22 @@
             min-height: 8rem;
             font-family: Roboto;
             width: 100%;
+            //desktop//
+            @media (min-width: 992px) {
+              min-height: 10rem;
+            }
           }
         }
-
-        .contact-right-email-phone {
-          input {
-          }
+        .contact-right-send-input {
+          background: white;
+          color: black;
+          border: 1px solid black;
+          border-radius: 0.2rem;
+          padding: 0.5rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+          margin-top: 1rem;
+          cursor: pointer;
         }
       }
     }

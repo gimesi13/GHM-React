@@ -16,7 +16,7 @@
 */
 
 .gallery {
-  background: lightblue;
+  background: rgb(124, 160, 169);
   margin-bottom: -1rem;
   gap: 2rem;
   //laptop//
@@ -25,6 +25,7 @@
     justify-content: space-evenly;
   }
   .glr {
+    overflow: hidden;
     //tablet//
     @media (min-width: 576px) {
       width: 70%;
@@ -50,12 +51,21 @@
       }
 
       .prev-btn {
+        font-size: 2rem;
         position: absolute;
         left: 0.5rem;
+        //desktop//
+        @media (min-width: 992px) {
+          font-size: 3rem;
+        }
       }
       .next-btn {
+        font-size: 2rem;
         position: absolute;
         right: 0.5rem;
+        @media (min-width: 992px) {
+          font-size: 3rem;
+        }
       }
     }
   }

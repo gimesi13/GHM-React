@@ -58,7 +58,7 @@ function About() {
         <div className="slider-abt">
           <Slider
             classNames="slider"
-            images={[rv1, rv2, rv3, rv4, rv5]}
+            images={[rv2, rv1, rv5, rv4, rv3]}
           ></Slider>
         </div>
       </div>

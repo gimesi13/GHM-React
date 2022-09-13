@@ -16,7 +16,7 @@
 */
 
 .about {
-  background: lightblue;
+  background: rgb(124, 160, 169);
   margin-bottom: -1rem;
   gap: 2rem;
   //laptop//
@@ -25,7 +25,7 @@
     justify-content: space-evenly;
   }
   .abt {
-    padding-bottom: 2rem;
+    padding-bottom: 2.5rem;
     //tablet//
     @media (min-width: 576px) {
       width: 70%;
@@ -46,7 +46,25 @@
       img {
         border-radius: 1rem;
         width: 90%;
-        max-width: 40rem;
+        max-width: 25rem;
+        position: relative;
+      }
+
+      .arrowsSVG {
+        color: rgb(0, 0, 0);
+      }
+
+      .prev-btn {
+        font-size: 1.8rem;
+        position: absolute;
+        bottom: 0.2rem;
+        left: calc(50% - 2rem);
+      }
+      .next-btn {
+        font-size: 1.8rem;
+        position: absolute;
+        bottom: 0.2rem;
+        right: calc(50% - 2rem);
       }
     }
   }

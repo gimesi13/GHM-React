@@ -33,17 +33,17 @@ function Contact() {
         <div className="contact-info">
           <div className="contact-left">
             <p>
-              Szecsei Dorottya
+              <span>Szecsei Dorottya</span>
               <br></br>
               Tel.: +36307253984
             </p>
             <p>
-              Gimesi Gergely
+              <span>Gimesi Gergely</span>
               <br></br>
               Tel.: +36304939729
             </p>
             <p>
-              Location:
+              <span>Location:</span>
               <br></br>
               3224 Grabnersiedlung 2,
               <br></br>
@@ -60,8 +60,8 @@ function Contact() {
           </div>
 
           <form ref={form} onSubmit={sendEmail} className="contact-right">
-            <h1>Contact Form:</h1>
-            <div>
+            <h1>Get in Touch:</h1>
+            <div className="email-address">
               <SiMinutemailer /> guesthousemitterbach@gmail.com
             </div>
             <div className="contact-right-name">

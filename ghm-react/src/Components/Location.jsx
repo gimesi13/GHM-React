@@ -16,7 +16,7 @@ function Location() {
           Voluptatibus, tempora! Praesentium?
         </p>
         <div className="map">
-          <GoogleMaps />
+          <GoogleMaps className="map-inner" />
         </div>
       </div>
 

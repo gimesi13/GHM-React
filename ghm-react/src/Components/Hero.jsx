@@ -19,14 +19,16 @@ function Hero({ t }) {
       strength={300}
     >
       <section className="hero" id="home">
-        <h1>{t("welcome")}</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. A non
-          dolorum modi, atque nam quas!
-        </p>
-        <a href="#about">
-          <button>Read more</button>
-        </a>
+        <div className="hero-text-container">
+          <h1>{t("welcome")}</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A non
+            dolorum modi, atque nam quas!
+          </p>
+          <a href="#about">
+            <button className="read-more-btn">Read more</button>
+          </a>
+        </div>
       </section>
     </Parallax>
   );

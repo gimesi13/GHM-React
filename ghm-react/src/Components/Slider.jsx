@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import {
+  BsFillArrowLeftCircleFill,
+  BsFillArrowRightCircleFill,
+} from "react-icons/bs";
 
 /* SLIDER */
 export default function Slider({ images }) {
@@ -16,14 +20,16 @@ export default function Slider({ images }) {
     <div className="slider">
       <img alt="" className="main-img" src={images[current]} />
       {current !== 0 && (
-        <button className="prev-btn" onClick={prev}>
-          prev
-        </button>
+        <BsFillArrowLeftCircleFill
+          className="prev-btn arrowsSVG"
+          onClick={prev}
+        />
       )}
       {current !== images.length - 1 && (
-        <button className="next-btn" onClick={next}>
-          next
-        </button>
+        <BsFillArrowRightCircleFill
+          className="next-btn arrowsSVG"
+          onClick={next}
+        />
       )}
     </div>
   );
