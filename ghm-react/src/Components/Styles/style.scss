@@ -73,6 +73,8 @@ section {
   width: 90%;
   border-radius: 3rem;
   text-align: center;
+  box-shadow: 5px 8px 32px -1px rgba(0, 0, 0, 0.79);
+
   //desktop//
   @media (min-width: 992px) {
     margin-left: 4rem;

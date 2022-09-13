@@ -24,15 +24,18 @@
   padding-bottom: 3rem;
 
   .hero-text-container {
+    position: absolute;
+    right: 0;
     @include flexCenter;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     padding-top: 1rem;
     padding-bottom: 1rem;
-    //laptop//
-    @media (min-width: 768px) {
-      max-width: 80%;
-      border-radius: 1rem;
+    @media (min-width: 576px) {
+      background: rgba(0, 0, 0, 0.85);
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      max-width: 40%;
     }
 
     h1 {
@@ -49,6 +52,7 @@
       border: none;
       border-radius: 0.2rem;
       padding: 0.3rem;
+      cursor: pointer;
     }
   }
 }
