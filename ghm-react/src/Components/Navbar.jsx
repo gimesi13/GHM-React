@@ -94,7 +94,12 @@ function Navbar({ i18n }) {
   };
 
   return (
-    <div className="navbar" id="navbar">
+    <motion.div
+      className="navbar"
+      id="navbar"
+      initial={{ y: "-8rem" }}
+      animate={{ y: 0 }}
+    >
       <div className="navbar-left"></div>
       <div className="navbar-middle">
         <a href="#home">
@@ -172,7 +177,7 @@ function Navbar({ i18n }) {
         <option value="ge">German</option>
         <option value="hu">Hungarian</option>
       </select>
-    </div>
+    </motion.div>
   );
 }
 

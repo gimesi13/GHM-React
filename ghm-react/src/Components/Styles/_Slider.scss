@@ -1,0 +1,39 @@
+@import "./variables";
+
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+
+.slider {
+  @include flexCenter;
+  width: 100%;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+
+  img {
+    max-height: 80vh;
+    width: 100%;
+    object-fit: cover;
+    transition: all 1s;
+  }
+
+  .prev-btn {
+    font-size: 1.8rem;
+    position: absolute;
+  }
+  .next-btn {
+    font-size: 1.8rem;
+    position: absolute;
+  }
+}

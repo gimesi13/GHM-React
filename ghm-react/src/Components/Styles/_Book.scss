@@ -1,0 +1,62 @@
+@import "./variables";
+
+/* BREAKPOINTS
+//tablet//
+@media (min-width: 576px) {  
+}
+//laptop//
+@media (min-width: 768px) {
+}
+//desktop//
+@media (min-width: 992px) {
+} 
+//large//
+@media (min-width: 1200px) {
+} 
+*/
+
+.book {
+  justify-content: flex-start;
+  flex: 1 0 auto;
+  .book-nav {
+    @include flexCenter;
+    flex-direction: column;
+    background: lightgreen;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4rem;
+
+    button {
+      margin-left: 1rem;
+      padding: 1rem;
+    }
+  }
+
+  h1 {
+    margin-top: 4rem;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .booking-card {
+    @include flexCenter;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+
+    p {
+      padding: 0;
+      text-align: left;
+    }
+  }
+}
