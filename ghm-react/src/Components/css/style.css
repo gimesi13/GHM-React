@@ -612,6 +612,7 @@
   /* CARDS CONTAINER */
 }
 .slopes .slopes-container p {
+  text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -1041,13 +1042,34 @@
           align-items: center;
 }
 .footer .footer-left .up-arrow-svg {
+  color: rgba(232, 232, 232, 0.9);
+  background: rgba(0, 0, 0, 0.69);
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+  position: fixed;
+  bottom: 0rem;
+  left: 0rem;
   font-size: 3rem;
-  margin-left: 1rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+@media (min-width: 576px) {
+  .footer .footer-left .up-arrow-svg {
+    bottom: 0.5rem;
+    left: 0.5rem;
+  }
 }
 @media (min-width: 992px) {
   .footer .footer-left .up-arrow-svg {
     font-size: 4rem;
   }
+}
+.footer .footer-left .visible-svg {
+  opacity: 1;
+  pointer-events: all;
 }
 .footer .footer-right {
   display: -webkit-box;

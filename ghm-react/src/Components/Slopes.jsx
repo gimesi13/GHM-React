@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import gemeindealpe from "./Pictures/gemeindealpe-small.jpg";
 import mariazell from "./Pictures/mariazell-small.jpg";
 import annaberg from "./Pictures/annaberg-small.jpg";
@@ -56,16 +57,40 @@ export default function Slopes() {
 }
 
 export function Slope({ name, picture, text, link }) {
+  /* VARIANTS */
+  const animatePanel = {
+    hidden: {},
+    show: {
+      transition: { delayChildren: 0.3, staggerChildren: 0.3 },
+    },
+  };
+
+  const animateText = {
+    hidden: { x: 100, opacity: 0 },
+    show: { x: 0, opacity: 1 },
+  };
+
   return (
-    <div className="slope">
-      <img src={picture} alt="" className="slope-image" />
-      <div className="slope-info">
+    <motion.div
+      className="slope"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.3 }}
+      variants={animatePanel}
+    >
+      <motion.img
+        src={picture}
+        alt=""
+        className="slope-image"
+        variants={animateText}
+      />
+      <motion.div className="slope-info" variants={animateText}>
         <div className="slope-name">{name}</div>
         <div className="slope info">{text}</div>
         <a href={link} target="_blank" rel="noreferrer">
           {link}
         </a>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }

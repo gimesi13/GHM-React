@@ -28,12 +28,32 @@
     @include flexCenter;
 
     .up-arrow-svg {
+      color: rgba(232, 232, 232, 0.9);
+      background: rgba(0, 0, 0, 0.69);
+      border-radius: 0.5rem;
+      padding: 0.2rem;
+      position: fixed;
+      bottom: 0rem;
+      left: 0rem;
       font-size: 3rem;
-      margin-left: 1rem;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 1s ease;
+      //tablet//
+      @media (min-width: 576px) {
+        bottom: 0.5rem;
+        left: 0.5rem;
+      }
       //desktop//
       @media (min-width: 992px) {
         font-size: 4rem;
       }
+    }
+
+    .visible-svg {
+      opacity: 1;
+      pointer-events: all;
     }
   }
 

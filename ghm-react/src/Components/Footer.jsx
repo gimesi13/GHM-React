@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { BsArrowUpCircleFill } from "react-icons/bs";
 import {
   TbBrandAirbnb,
@@ -8,6 +8,30 @@ import {
 } from "react-icons/tb";
 
 function Footer({ route }) {
+  const [scrolltop, setScrollTop] = useState(false);
+
+  // arrow on scroll behavior
+  const handleArrowScroll = () => {
+    if (window.scrollY >= 1000) {
+      !scrolltop && setScrollTop(true);
+    } else {
+      scrolltop && setScrollTop(false);
+    }
+  };
+
+  useEffect(() => {
+    if (scrolltop === true) {
+      let nav = document.getElementById("uparrow");
+      nav.classList.add("visible-svg");
+    } else {
+      let nav = document.getElementById("uparrow");
+      nav.classList.remove("visible-svg");
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scrolltop]);
+
+  window.addEventListener("scroll", handleArrowScroll, { passive: true });
+
   return (
     <section className="footer">
       <div className="footer-left">
@@ -18,7 +42,7 @@ function Footer({ route }) {
                 window.scrollTo(0, 0);
               }}
             >
-              <BsArrowUpCircleFill className="up-arrow-svg" />
+              <BsArrowUpCircleFill id="uparrow" className="up-arrow-svg" />
             </div>
           )}
         </div>

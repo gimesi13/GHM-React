@@ -15,7 +15,7 @@ function About() {
     show: {
       opacity: 1,
 
-      transition: { delayChildren: 0.5, staggerChildren: 0.2 },
+      transition: { delayChildren: 0.4, staggerChildren: 0.2 },
     },
   };
 
@@ -33,7 +33,7 @@ function About() {
       className="about"
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.3 }}
     >
       <motion.div className="rounded-container abt" variants={animatePanel}>
         <span className="hash" id="about"></span>
