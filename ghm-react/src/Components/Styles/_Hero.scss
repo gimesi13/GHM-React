@@ -22,6 +22,11 @@
   height: calc(100vh - 6rem);
   min-height: 100vh;
   padding-bottom: 3rem;
+  justify-content: flex-start;
+  //tablet//
+  @media (min-width: 576px) {
+    justify-content: center;
+  }
 
   .hero-text-container {
     position: absolute;
@@ -29,9 +34,12 @@
     @include flexCenter;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.7);
-    padding-top: 1rem;
+    padding-top: 6rem;
     padding-bottom: 1rem;
+
     @media (min-width: 576px) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
       background: rgba(0, 0, 0, 0.85);
       border-top-left-radius: 1rem;
       border-bottom-left-radius: 1rem;

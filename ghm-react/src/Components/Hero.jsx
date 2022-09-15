@@ -19,6 +19,11 @@ function Hero({ t }) {
     show: { y: 0, opacity: 1 },
   };
 
+  const animateSlider = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
+
   return (
     <Parallax
       className="parallax-main"
