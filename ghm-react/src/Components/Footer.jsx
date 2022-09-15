@@ -7,7 +7,7 @@ import {
   TbBrandInstagram,
 } from "react-icons/tb";
 
-function Footer({ route }) {
+function Footer() {
   const [scrolltop, setScrollTop] = useState(false);
 
   // arrow on scroll behavior
@@ -36,15 +36,13 @@ function Footer({ route }) {
     <section className="footer">
       <div className="footer-left">
         <div className="arrow-up">
-          {route === "main" && (
-            <div
-              onClick={() => {
-                window.scrollTo(0, 0);
-              }}
-            >
-              <BsArrowUpCircleFill id="uparrow" className="up-arrow-svg" />
-            </div>
-          )}
+          <div
+            onClick={() => {
+              window.scrollTo(0, 0);
+            }}
+          >
+            <BsArrowUpCircleFill id="uparrow" className="up-arrow-svg" />
+          </div>
         </div>
       </div>
       <div className="footer-right">

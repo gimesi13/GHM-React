@@ -16,12 +16,12 @@
 */
 
 .book {
+  background: white;
   justify-content: flex-start;
   flex: 1 0 auto;
   .book-nav {
     @include flexCenter;
     flex-direction: column;
-    background: lightgreen;
     align-items: flex-start;
     position: fixed;
     top: 0;
@@ -29,9 +29,16 @@
     right: 0;
     height: 4rem;
 
-    button {
-      margin-left: 1rem;
-      padding: 1rem;
+    .back-nav {
+      @include flexCenter;
+      button {
+        margin-left: 1rem;
+        background: black;
+        color: white;
+        align-self: flex-end;
+        padding: 1rem;
+        cursor: pointer;
+      }
     }
   }
 

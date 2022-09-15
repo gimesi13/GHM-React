@@ -1232,6 +1232,7 @@
 } 
 */
 .book {
+  background: white;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -1253,7 +1254,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: lightgreen;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1263,9 +1263,25 @@
   right: 0;
   height: 4rem;
 }
-.book .book-nav button {
+.book .book-nav .back-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.book .book-nav .back-nav button {
   margin-left: 1rem;
+  background: black;
+  color: white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   padding: 1rem;
+  cursor: pointer;
 }
 .book h1 {
   margin-top: 4rem;
