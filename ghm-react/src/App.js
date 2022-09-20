@@ -1,6 +1,11 @@
 import { useState, Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+/* Languages */
+import En from "./languages/en.json";
+import Ge from "./languages/ge.json";
+import Hu from "./languages/hu.json";
+
 import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Rooms from "./Components/Rooms";
@@ -16,9 +21,9 @@ import Footer from "./Components/Footer";
 import Book from "./Components/Book";
 
 /* LANGUAGES */
-const translationsEn = { welcome: "Welcome!!!" };
-const translationsGe = { welcome: "Willkommen!" };
-const translationsHu = { welcome: "Szia!" };
+const translationsEn = En;
+const translationsGe = Ge;
+const translationsHu = Hu;
 
 i18n
   .use(initReactI18next) //passes i18n down to react-i18next

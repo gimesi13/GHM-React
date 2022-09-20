@@ -42,10 +42,7 @@ function Hero({ t }) {
           animate="show"
         >
           <motion.h1 variants={animateText}>{t("welcome")}</motion.h1>
-          <motion.p variants={animateText}>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. A non
-            dolorum modi, atque nam quas!
-          </motion.p>
+          <motion.p variants={animateText}>{t("heroP")}</motion.p>
           <motion.a href="#about" variants={animateText}>
             <button className="read-more-btn">Read more</button>
           </motion.a>
