@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import locationSVG from "./Pictures/undraw-location.svg";
 import GoogleMaps from "./GoogleMaps";
 
-function Location() {
+function Location({ t }) {
   /* VARIANTS */
   const animatePanel = {
     hidden: { opacity: 0 },
@@ -33,13 +33,8 @@ function Location() {
       <motion.div className="rounded-container loc" variants={animatePanel}>
         <span className="hash" id="location"></span>
 
-        <motion.h1 variants={animateText}>LOCATION</motion.h1>
-        <motion.p variants={animateText}>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-          reiciendis officia velit, odit eius fugit vero dignissimos iure
-          perspiciatis aspernatur, atque fugiat ea sed quia recusandae quae?
-          Voluptatibus, tempora! Praesentium?
-        </motion.p>
+        <motion.h1 variants={animateText}>{t("LOCATION")}</motion.h1>
+        <motion.p variants={animateText}>{t("location_text")}</motion.p>
         <motion.div className="map" variants={animateMap}>
           <GoogleMaps className="map-inner" />
         </motion.div>

@@ -8,7 +8,7 @@ import rv3 from "./Pictures/review3.png";
 import rv4 from "./Pictures/sonja-review.PNG";
 import rv5 from "./Pictures/paul-review.PNG";
 
-function About() {
+function About({ t }) {
   /* VARIANTS */
   const animatePanel = {
     hidden: { opacity: 0 },
@@ -37,15 +37,8 @@ function About() {
     >
       <motion.div className="rounded-container abt" variants={animatePanel}>
         <span className="hash" id="about"></span>
-        <motion.h1 variants={animateText}>ABOUT US</motion.h1>
-        <motion.p variants={animateText}>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
-          sequi maxime voluptates. Possimus reiciendis eveniet accusamus,
-          quibusdam nam dolorem labore laboriosam sapiente odit, explicabo velit
-          facere suscipit architecto eius voluptatibus ipsum? Qui ea expedita
-          quas molestias perferendis fugit obcaecati cupiditate quaerat eos
-          dolorum dolorem delectus m
-        </motion.p>
+        <motion.h1 variants={animateText}>{t("ABOUT_US")}</motion.h1>
+        <motion.p variants={animateText}>{t("about_us_text")}</motion.p>
         <motion.div className="slider-abt" variants={animateSlider}>
           <Slider
             classNames="slider"

@@ -53,19 +53,19 @@ function App() {
         <div className="App">
           <Switch>
             <Route exact path="/">
-              <Navbar i18n={i18n} />
+              <Navbar i18n={i18n} t={t} />
               <Hero t={t} />
-              <About />
-              <Rooms />
-              <Location />
-              <Slopes />
-              <Gallery />
-              <Contact />
-              <Footer />
+              <About t={t} />
+              <Rooms t={t} />
+              <Location t={t} />
+              <Slopes t={t} />
+              <Gallery t={t} />
+              <Contact t={t} />
+              <Footer t={t} />
             </Route>
-            <Route exact path="/book">
-              <Book />
-              <Footer />
+            <Route exact path="/book" t={t}>
+              <Book t={t} />
+              <Footer t={t} />
             </Route>
           </Switch>
         </div>

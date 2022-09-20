@@ -5,57 +5,55 @@ import OutsideClick from "detect-outside-click-react";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { CgMenu, CgClose } from "react-icons/cg";
 
-const menuItems = [
-  { name: "Home", href: "#home" },
-  { name: "About Us", href: "#about" },
-  { name: "Rooms", href: "#rooms" },
-  { name: "Location", href: "#location" },
-  { name: "Slopes", href: "#slopes" },
-  { name: "Gallery", href: "#gallery" },
-  { name: "Contact", href: "#contact" },
-  { name: "Book Now", href: "/book" },
-];
-
-/* variants */
-const animateMenu = {
-  hidden: {
-    clipPath: "circle(0% at 50% -50%)",
-    transition: {
-      type: "tween",
-      duration: 1,
-      delay: 0.2,
-      staggerChildren: 0.05,
-    },
-  },
-  show: {
-    clipPath: "circle(150% at 50% 0%)",
-    transition: {
-      type: "tween",
-      duration: 1,
-      delayChildren: 0.7,
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-const animateMenuItems = {
-  hidden: {
-    opacity: 0,
-    x: -200,
-  },
-  show: {
-    opacity: 1,
-    x: 0,
-  },
-};
-
-function Navbar({ i18n }) {
+function Navbar({ i18n, t }) {
   /* states */
   const [isOpen, setIsOpen] = useState(false);
   const controlMenu = useAnimation();
   const [navbar, setNavbar] = useState(false);
-  /*   const grow = useAnimation();
-  const shrink = useAnimation(); */
+
+  const menuItems = [
+    { name: t("nav_home"), href: "#home" },
+    { name: t("nav_about"), href: "#about" },
+    { name: t("nav_rooms"), href: "#rooms" },
+    { name: t("nav_location"), href: "#location" },
+    { name: t("nav_slopes"), href: "#slopes" },
+    { name: t("nav_gallery"), href: "#gallery" },
+    { name: t("nav_contact"), href: "#contact" },
+    { name: t("nav_book_now"), href: "/book" },
+  ];
+
+  /* variants */
+  const animateMenu = {
+    hidden: {
+      clipPath: "circle(0% at 50% -50%)",
+      transition: {
+        type: "tween",
+        duration: 1,
+        delay: 0.2,
+        staggerChildren: 0.05,
+      },
+    },
+    show: {
+      clipPath: "circle(150% at 50% 0%)",
+      transition: {
+        type: "tween",
+        duration: 1,
+        delayChildren: 0.7,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const animateMenuItems = {
+    hidden: {
+      opacity: 0,
+      x: -200,
+    },
+    show: {
+      opacity: 1,
+      x: 0,
+    },
+  };
 
   /* FUNCTIONS */
 
@@ -103,10 +101,10 @@ function Navbar({ i18n }) {
       <div className="navbar-left"></div>
       <div className="navbar-middle">
         <a href="#home">
-          <div className="logo">Guesthouse Mitterbach</div>
+          <div className="logo">{t("title")}</div>
         </a>
 
-        <div className="youth-hostel">-youth hostel-</div>
+        <div className="youth-hostel">-{t("youth_hostel")}-</div>
       </div>
 
       <div className="navbar-right">
@@ -116,7 +114,7 @@ function Navbar({ i18n }) {
             whileHover={{ opacity: 0.7, borderRadius: "2rem" }}
             whileTap={{ scale: 0.9 }}
           >
-            BOOK NOW
+            {t("BOOK_NOW")}
           </motion.div>
         </NavLink>
       </div>

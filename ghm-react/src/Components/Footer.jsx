@@ -7,7 +7,7 @@ import {
   TbBrandInstagram,
 } from "react-icons/tb";
 
-function Footer() {
+function Footer({ t }) {
   const [scrolltop, setScrollTop] = useState(false);
 
   // arrow on scroll behavior
@@ -52,7 +52,7 @@ function Footer() {
           <TbBrandAirbnb />
           <TbBrandBooking />
         </div>
-        <div>created by me</div>
+        <div>{t("created_by")}</div>
       </div>
     </section>
   );

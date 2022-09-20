@@ -42,9 +42,9 @@ function Hero({ t }) {
           animate="show"
         >
           <motion.h1 variants={animateText}>{t("welcome")}</motion.h1>
-          <motion.p variants={animateText}>{t("heroP")}</motion.p>
+          <motion.p variants={animateText}>{t("welcome_message")}</motion.p>
           <motion.a href="#about" variants={animateText}>
-            <button className="read-more-btn">Read more</button>
+            <button className="read-more-btn">{t("read_more")}</button>
           </motion.a>
         </motion.div>
       </section>

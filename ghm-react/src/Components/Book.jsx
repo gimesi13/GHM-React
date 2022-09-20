@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import thumbnail from "./Pictures/booking-thumbnail.PNG";
 
-function Book() {
+function Book({ t }) {
   /* VARIANTS */
   const animatePanel = {
     hidden: { opacity: 0 },
@@ -31,15 +31,12 @@ function Book() {
             whileHover={{ borderRadius: "2rem" }}
             whileTap={{ scale: 0.9 }}
           >
-            Back to Main page
+            {t("back_to_main_page")}
           </motion.button>
         </NavLink>
       </nav>
-      <motion.h1 variants={animateText}>BOOK NOW</motion.h1>
-      <motion.p variants={animateText}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure ea
-        possimus, inventore cum soluta quo!
-      </motion.p>
+      <motion.h1 variants={animateText}>{t("BOOK_NOW")}</motion.h1>
+      <motion.p variants={animateText}>{t("book_now_text")}</motion.p>
 
       <motion.div className="booking-card" variants={animateText}>
         <a
@@ -51,7 +48,7 @@ function Book() {
         </a>
 
         <motion.p variants={animateText}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, iusto?{" "}
+          {t("book_now_text_2")}
           <span>lnik</span> <span>lnik</span>
         </motion.p>
       </motion.div>

@@ -4,43 +4,38 @@ import gemeindealpe from "./Pictures/gemeindealpe-small.jpg";
 import mariazell from "./Pictures/mariazell-small.jpg";
 import annaberg from "./Pictures/annaberg-small.jpg";
 
-const slopes = [
-  {
-    name: "Gemeindealple (Mitterbach)",
-    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nem praesentium recusandae. Porro non a nemo. Officia aspernatur vel minima, vero, molestias nesciunt explicabo eligendi, soluta",
-    picture: gemeindealpe,
-    link: "https://www.gemeindealpe.at/",
-  },
-  {
-    name: "Mariazell",
-    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nem praesentium recusandae. Porro non a nemo. Officia aspernatur vel minima, vero, molestias nesciunt explicabo eligendi, soluta",
-    picture: mariazell,
-    link: "https://www.mariazell.at/",
-  },
-  {
-    name: "Annaberg",
-    text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nem praesentium recusandae. Porro non a nemo. Officia aspernatur vel minima, vero, molestias nesciunt explicabo eligendi, soluta",
-    picture: annaberg,
-    link: "https://www.annaberg.info/",
-  },
-];
-
-export default function Slopes() {
+export default function Slopes({ t }) {
+  const slopes = [
+    {
+      name: "Gemeindealple (Mitterbach)",
+      text: t("mitterbach_slope_text"),
+      picture: gemeindealpe,
+      link: "https://www.gemeindealpe.at/",
+    },
+    {
+      name: "Bürgeralpe (Mariazell)",
+      text: t("mariazell_slope_text"),
+      picture: mariazell,
+      link: "https://www.mariazell.at/",
+    },
+    {
+      name: "Annaberg",
+      text: t("annaberg_slope_text"),
+      picture: annaberg,
+      link: "https://www.annaberg.info/",
+    },
+  ];
   return (
     <section className="slopes">
       <span className="hash" id="slopes"></span>
       <div className="slopes-container">
-        <h1>SLOPES</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet nemo
-          praesentium recusandae. Porro non a nemo. Officia aspernatur vel
-          minima, vero, molestias nesciunt explicabo eligendi, soluta
-          accusantium praesentium doloribus fugit!
-        </p>
+        <h1>{t("SLOPES")}</h1>
+        <p>{t("slopes_text")}</p>
         <div className="slope-cards">
           {slopes.map((slope) => {
             return (
               <Slope
+                t={t}
                 className="slope"
                 key={slope.name}
                 name={slope.name}

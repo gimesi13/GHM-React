@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import { SiMinutemailer } from "react-icons/si";
 
-function Contact() {
+function Contact({ t }) {
   /* emailjs code*/
   const form = useRef();
 
@@ -29,7 +29,7 @@ function Contact() {
     <section className="contact">
       <span className="hash" id="contact"></span>
       <div className="contact-container">
-        <h1>CONTACT</h1>
+        <h1>{t("CONTACT")}</h1>
         <div className="contact-info">
           <div className="contact-left">
             <p>
@@ -43,7 +43,7 @@ function Contact() {
               Tel.: +36304939729
             </p>
             <p>
-              <span>Location:</span>
+              <span>{t("contact_location")}</span>
               <br></br>
               3224 Grabnersiedlung 2,
               <br></br>
@@ -54,31 +54,31 @@ function Contact() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button>Open Maps</button>
+                <button>{t("open_maps")}</button>
               </a>
             </p>
           </div>
 
           <form ref={form} onSubmit={sendEmail} className="contact-right">
-            <h1>Get in Touch:</h1>
+            <h1>{t("get_in_touch")}</h1>
             <div className="email-address">
               <SiMinutemailer /> guesthousemitterbach@gmail.com
             </div>
             <div className="contact-right-name">
-              <input type="text" name="name" placeholder="Name" />
+              <input type="text" name="name" placeholder={t("name")} />
             </div>
             <div className="contact-right-email-phone">
-              <input type="email" name="email" placeholder="Email" />
-              <input type="tel" name="phone" placeholder="Phone No." />
+              <input type="email" name="email" placeholder={t("email")} />
+              <input type="tel" name="phone" placeholder={t("phone")} />
             </div>
             <div className="contact-right-message">
-              <textarea name="message" placeholder="Message" />
+              <textarea name="message" placeholder={t("message")} />
             </div>
             <div className="contact-right-send">
               <input
                 className="contact-right-send-input"
                 type="submit"
-                value="Send"
+                value={t("send")}
               />
             </div>
           </form>
