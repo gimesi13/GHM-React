@@ -1,1 +1,60 @@
-{ "welcome": "Willkommen!!", "heroP": " hero-p" }
+{
+  "title": "Gästehaus Mitterbach",
+  "youth_hostel": "jugendherberge",
+
+  "nav_home": "Startseite",
+  "nav_about": "Über uns",
+  "nav_rooms": "Räume",
+  "nav_location": "Ort",
+  "nav_slopes": "Pisten",
+  "nav_gallery": "Galerie",
+  "nav_contact": "Kontakt",
+  "nav_book_now": "Buchen Sie jetzt",
+  "book_now": "BUCHEN",
+
+  "welcome": "Welcome!",
+  "welcome_message": "Liebe Gäste, vielen Dank für Ihren Besuch auf unserer neuen Website! Wir hoffen, Sie finden hier alle Informationen, die Sie suchen, und bis bald in Mitterbach. Sollte etwas fehlen, sprechen Sie uns gerne an.",
+  "read_more": "Weiterlesen",
+
+  "ABOUT_US": "ÜBER UNS",
+  "about_us_text": "Hallo, es sind Dori und Geri und wir sind das Herz und die Seele des Gästehauses Mitterbach :) . Als wir dieses kleine Paradies versteckt in den Alpen fanden, haben wir uns sofort in es verliebt. Wir hoffen, dieses Gefühl mit Ihnen teilen zu können und dass Sie Ihre Zeit hier genauso genießen werden wie wir. Skifahren und Snowboarden ist unsere Leidenschaft und wir LIEBEN Tiere! Bringen Sie Ihre untenstehenden Haustiere gerne mit in Ihren Urlaub in Mitterbach, wir sorgen dafür, dass sie glücklich und versorgt sind, auch wenn Sie auf der Piste sind oder andere Aktivitäten genießen, die möglicherweise nicht für Ihren vierbeinigen Begleiter geeignet sind.",
+
+  "ROOMS": "RÄUME",
+  "rooms_text": "Das Haus ist für die Unterbringung von mittelgroßen Gruppen konzipiert, mit österreichischer Holzausstattung, einem großen Gemeinschaftsraum, getrennten Damen- und Herrentoiletten, insgesamt 34 Betten, 2-, 4-, 6- und 8-Bettzimmer. Das Haus kann komplett gebucht werden. Auf Anfrage servieren wir jeden Morgen ein kontinentales Frühstück.",
+  "double_bedrooms": "Doppelzimmer",
+  "double_bedrooms_price": "Ab 25 €/Person/Nacht*",
+  "4_bed_dorm_room": "4-Bett-Schlafsaal",
+  "4_bed_dorm_room_price": "Ab 20 €/Person/Nacht*",
+  "6_bed_dorm_rooms": "6-Bett-Schlafsäle",
+  "6_bed_dorm_rooms_price": "Ab 20 €/Person/Nacht*",
+  "8_bed_dorm_room": "8-Bett-Schlafsaal",
+  "8_bed_dorm_room_price": "Ab 20 €/Person/Nacht*",
+
+  "LOCATION": "STANDORT",
+  "location_text": "3224 Grabnersiedlung 2, Mitterbach am Erlaufsee. Das Gästehaus befindet sich in Österreich, Mitterbach am Erlaufsee, 130 Kilometer von Wien entfernt an der Gemeindealpe, 50 Meter vom Skilift entfernt. Es gibt mehrere interessante Aktivitäten in der Umgebung. Folgen Sie uns in den sozialen Medien, um aktuelle Informationen zu lokalen Veranstaltungen zu erhalten!",
+
+  "SLOPES": "PISTEN",
+  "slopes_text": "Es gibt drei Skigebiete in der Nähe. Sie können ein kombiniertes Skiliftticket kaufen, das für diese drei Hügel gültig ist, damit Sie sie alle ausprobieren können, ohne neue Tickets kaufen zu müssen.",
+  "mitterbach_slope_text": "Die Gemeindealpe, auf der unser Gästehaus beheimatet ist, hat neben langen blauen Pisten auch rote Pisten unterschiedlicher Schwierigkeitsgrade und eine der steilsten schwarzen Pisten Niederösterreichs. Am Fuße des Berges gibt es eine Übungsstrecke für Anfänger, weiter oben wurde ein Snowpark gebaut. Die Pisten wurden kürzlich mit vielen neuen Schneekanonen ausgestattet, sodass sie immer schneesicher sind. Am Fuße des Berges beginnt eine 12 Kilometer lange Langlaufloipe.",
+  "mariazell_slope_text": "Es ist mit dem Auto oder Bus in 5-10 Minuten erreichbar. Diese kleine Stadt ist im Winter eine berühmte Attraktion unter den Besuchern. Neben seiner reichen christlichen Kultur und dem charmanten Adventmarkt ist es auch ein beliebtes Ziel für seine Skipisten. Seine Pisten sind vor allem Anfängern zu empfehlen, es gibt aber auch Strecken für Fortgeschrittene.",
+  "annaberg_slope_text": "Dieser Berg ist zwar etwas weiter weg, etwa eine halbe Stunde mit dem Bus, aber auch hier lohnt sich ein Besuch, denn auch hier gibt es spannende Pisten und der bei uns gekaufte Skipass gilt auch hier.",
+
+  "GALLERY": "GALERIE",
+
+  "CONTACT": "KONTAKT",
+  "contact_location": "Ort:",
+  "open_maps": "Auf Google Maps öffnen",
+  "get_in_touch": "Kontaktiere uns:",
+  "name": "Name",
+  "email": "Email",
+  "phone": "Telefon",
+  "message": "Nachricht",
+  "send": "Senden",
+
+  "created_by": "Created by Gergely Gimesi in 2022",
+
+  "BOOK_NOW": "BUCHEN",
+  "back_to_main_page": "Zurück zur Hauptseite",
+  "book_now_text": "Klicken Sie auf das Bild unten und füllen Sie das Formular aus, um uns eine Buchungsanfrage zu senden",
+  "book_now_text_2": "Buchen Sie direkt über das obige Formular oder über Buchungsseiten:"
+}

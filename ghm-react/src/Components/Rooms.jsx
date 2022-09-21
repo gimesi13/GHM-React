@@ -9,25 +9,25 @@ function Rooms({ t }) {
   const rooms = [
     {
       name: t("double_bedrooms"),
-      price: "From €25.-*",
+      price: t("double_bedrooms_price"),
       picture: doubleroom,
       capacity: "2",
     },
     {
       name: t("4_bed_dorm_room"),
-      price: "From €20.-*",
+      price: t("4_bed_dorm_room_price"),
       picture: room4,
       capacity: "4",
     },
     {
       name: t("6_bed_dorm_rooms"),
-      price: "From €20.-*",
+      price: t("6_bed_dorm_rooms_price"),
       picture: room6,
       capacity: "6",
     },
     {
       name: t("8_bed_dorm_room"),
-      price: "From €20.-*",
+      price: t("8_bed_dorm_room_price"),
       picture: room8,
       capacity: "8",
     },
