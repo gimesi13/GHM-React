@@ -126,6 +126,8 @@
   padding: 1rem;
   margin-right: 1rem;
   display: none;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
   .navbar .navbar-right .book-now-btn {
@@ -225,11 +227,19 @@
   padding: 0;
   padding-left: 1rem;
   padding-right: 1rem;
+  a-transition: all 0.1s;
+}
+.navbar .nav-menu-items ul a:hover {
+  opacity: 0.7;
+}
+.navbar .nav-menu-items ul a:active {
+  opacity: 0.5;
 }
 .navbar .language {
   position: absolute;
   right: 4.5rem;
   width: 41px;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .navbar .language {
@@ -410,7 +420,13 @@
   position: relative;
 }
 .about .abt .slider-abt .arrowsSVG {
-  color: rgb(0, 0, 0);
+  color: black;
+  cursor: pointer;
+  -webkit-transition: scale 0.1s;
+  transition: scale 0.1s;
+}
+.about .abt .slider-abt .arrowsSVG:active {
+  scale: 0.9;
 }
 .about .abt .slider-abt .prev-btn {
   font-size: 1.8rem;
@@ -773,6 +789,10 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.gallery .glr .slider .arrowSVG {
+  cursor: pointer;
+  color: red;
+}
 .gallery .glr .slider .prev-btn {
   font-size: 2rem;
   position: absolute;
@@ -1100,6 +1120,16 @@
 .footer .footer-right .social-links {
   font-size: 2.5rem;
 }
+.footer .footer-right a {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.footer .footer-right a:hover {
+  opacity: 0.7;
+}
+.footer .footer-right a:active {
+  opacity: 0.5;
+}
 
 /* MIXINS */
 /* VARIABLES */
@@ -1129,7 +1159,7 @@
           align-items: center;
   width: 100%;
   overflow: hidden;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 .slider img {
   max-height: 80vh;
@@ -1138,6 +1168,15 @@
      object-fit: cover;
   -webkit-transition: all 1s;
   transition: all 1s;
+  pointer-events: none;
+}
+.slider .arrowsSVG {
+  cursor: pointer;
+  -webkit-transition: scale 0.1s;
+  transition: scale 0.1s;
+}
+.slider .arrowsSVG:active {
+  scale: 0.9;
 }
 .slider .prev-btn {
   font-size: 1.8rem;

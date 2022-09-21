@@ -111,7 +111,7 @@ function Navbar({ i18n, t }) {
         <NavLink to="/book">
           <motion.div
             className="book-now-btn"
-            whileHover={{ opacity: 0.7, borderRadius: "2rem" }}
+            whileHover={{ borderRadius: "2rem" }}
             whileTap={{ scale: 0.9 }}
           >
             {t("BOOK_NOW")}

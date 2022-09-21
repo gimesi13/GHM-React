@@ -82,6 +82,7 @@
       padding: 1rem;
       margin-right: 1rem;
       display: none;
+      transition: background-color 0.3s ease-in-out;
       //laptop//
       @media (min-width: 768px) {
         display: block;
@@ -148,6 +149,16 @@
       padding-right: 1rem;
       @media (max-height: 400px) {
       }
+
+      a: {
+        transition: all 0.1s;
+      }
+      a:hover {
+        opacity: 0.7;
+      }
+      a:active {
+        opacity: 0.5;
+      }
     }
   }
 
@@ -156,6 +167,7 @@
     position: absolute;
     right: 4.5rem;
     width: 41px;
+    cursor: pointer;
     @media (min-width: 768px) {
       left: 5rem;
       right: auto;

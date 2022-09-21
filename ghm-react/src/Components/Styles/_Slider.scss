@@ -19,15 +19,22 @@
   @include flexCenter;
   width: 100%;
   overflow: hidden;
-  color: rgb(255, 255, 255);
+  color: white;
 
   img {
     max-height: 80vh;
     width: 100%;
     object-fit: cover;
     transition: all 1s;
+    pointer-events: none;
   }
-
+  .arrowsSVG {
+    cursor: pointer;
+    transition: scale 0.1s;
+  }
+  .arrowsSVG:active {
+    scale: 0.9;
+  }
   .prev-btn {
     font-size: 1.8rem;
     position: absolute;

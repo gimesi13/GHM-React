@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { BsArrowUpCircleFill } from "react-icons/bs";
 import {
   TbBrandAirbnb,
@@ -47,10 +48,31 @@ function Footer({ t }) {
       </div>
       <div className="footer-right">
         <div className="social-links">
-          <TbBrandFacebook />
-          <TbBrandInstagram />
-          <TbBrandAirbnb />
-          <TbBrandBooking />
+          <a
+            href="https://www.facebook.com/guesthousemitt"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <TbBrandFacebook />
+          </a>
+          <a
+            href="https://www.instagram.com/guesthousemitterbach/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <TbBrandInstagram />
+          </a>
+
+          <a
+            href="https://www.airbnb.hu/rooms/41781311"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <TbBrandAirbnb />
+          </a>
+          <a href="https://www.booking.com/" target="_blank" rel="noreferrer">
+            <TbBrandBooking />
+          </a>
         </div>
         <div>{t("created_by")}</div>
       </div>

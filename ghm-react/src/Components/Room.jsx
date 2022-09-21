@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 
-function Room({ picture, name, price }) {
+function Room({ picture, name, price, t }) {
   /* VARIANTS */
   const animatePanel = {
     hidden: {},

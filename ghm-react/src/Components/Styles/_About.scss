@@ -51,7 +51,12 @@
       }
 
       .arrowsSVG {
-        color: rgb(0, 0, 0);
+        color: black;
+        cursor: pointer;
+        transition: scale 0.1s;
+      }
+      .arrowsSVG:active {
+        scale: 0.9;
       }
 
       .prev-btn {

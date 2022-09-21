@@ -49,7 +49,10 @@
         width: 100%;
         object-fit: cover;
       }
-
+      .arrowSVG {
+        cursor: pointer;
+        color: red;
+      }
       .prev-btn {
         font-size: 2rem;
         position: absolute;
