@@ -1,6 +1,6 @@
 {
-  "title": "Gasthaus Mitterbach",
-  "youth_hostel": "ifjúsági-szálló",
+  "title": "Mitterbach Vendégház",
+  "youth_hostel": "ifjúsági szálló",
 
   "nav_home": "Főoldal",
   "nav_about": "Rólunk",
@@ -31,13 +31,13 @@
   "8_bed_dorm_room_price": "€20/fő/éj-től*",
 
   "LOCATION": "HELYSZÍN",
-  "location_text": "3224 Grabnersiedlung 2, Mitterbach am Erlaufsee. A vendégház Ausztriában, a Mitterbach am Erlaufsee nevű kis faluban található, 370 kilóméterre Budapesttől a Gemeindealpe lábánál, a sífelvonótól mindössze 50 méterre. Rengeteg érdekes látványosság található a környéken. Az éppen aktuális eseményekről a közösségi oldalainkon szoktunk posztolni.",
+  "location_text": "Cím: 3224 Grabnersiedlung 2, Mitterbach am Erlaufsee. A vendégház Ausztriában, a Mitterbach am Erlaufsee nevű kis faluban található, 370 kilométerre Budapesttől a Gemeindealpe lábánál, a sífelvonótól mindössze 50 méterre.",
 
   "SLOPES": "SÍTEREP",
   "slopes_text": "A közelben három síterep található. Ezen hegyek egyikén vásárolt kombinált sífelvonó jegyekkel mindhárom hegyen síelhetünk.",
-  "mitterbach_slope_text": "A vendégházunknak otthont adó Gemeindealpe hegy hosszú erdei kék pályái mellett különböző nehézségű piros pályákkal is rendelkezik, ezen felül itt van Alsó-Ausztria egyik legmeredekebb fekete pályája is. A hegy lábánál gyakorlópálya van a kezdőknek, feljebb pedig egy Snowpark is épült. Nemrég rengeteg új hóágyúval szerelték fel a pályákat, így mindig hóbiztosak. A hegy lábától 12 kilóméter hosszú sífutó pálya is indul.",
-  "mariazell_slope_text": "Kocsival vagy busszal tőlünk 10 perc alatt megközelíthető. A magyarok körében méltán híres látványosság télen ez a kisváros. Gazdag keresztény kultúrája és hangulatos Adventi vására mellet sípályái miatt is kedvelt célállomás. Ezeket a pályákat főleg kezdőknek javasoljuk, de vannak haladó pályák is.",
-  "annaberg_slope_text": "Ez a hegy kicsit messzebb található, körülbelül fél óra busszal, viszont ide is érdemes ellátogatni, ugyanis itt is izgalmas pályák vannak és ide is érvényes a nálunk vásárolt síbérlet.",
+  "mitterbach_slope_text": "A vendégházunknak otthont adó Gemeindealpe hegy hosszú erdei kék pályái mellett különböző nehézségű piros pályákkal is rendelkezik, ezen felül itt van Alsó-Ausztria egyik legmeredekebb fekete pályája is. A hegy lábánál gyakorlópálya van a kezdőknek, feljebb pedig egy Snowpark is épült. Nemrég rengeteg új hóágyúval szerelték fel a pályákat, így mindig hóbiztosak. A hegy lábától 12 kilométer hosszú sífutó pálya is indul.",
+  "mariazell_slope_text": "Kocsival vagy busszal tőlünk 5 perc alatt megközelíthető. A magyarok körében méltán híres látványosság télen ez a kisváros. Gazdag keresztény kultúrája és hangulatos Adventi vására mellet sípályái miatt is kedvelt célállomás. Ezeket a pályákat főleg kezdőknek javasoljuk, de vannak haladó pályák is.",
+  "annaberg_slope_text": "Ez a hegy kicsit messzebb található, körülbelül 20 perc autóval/busszal, viszont ide is érdemes ellátogatni, ugyanis itt is izgalmas pályák vannak és ide is érvényes a nálunk vásárolt síbérlet.",
 
   "GALLERY": "GALÉRIA",
 
