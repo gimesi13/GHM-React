@@ -8,18 +8,29 @@ import {
 /* SLIDER */
 export default function Slider({ images }) {
   const [current, setCurrent] = useState(0);
+  const [loaded, setLoaded] = useState(false);
 
   /* FUNCTIONS */
   const prev = () => {
+    setLoaded(false);
     setCurrent(current - 1);
   };
   const next = () => {
+    setLoaded(false);
     setCurrent(current + 1);
   };
 
   return (
     <div className="slider">
-      <img alt="" className="main-img" src={images[current]} />
+      <img
+        alt=""
+        className="main-img"
+        src={images[current]}
+        onLoad={() => {
+          setLoaded(true);
+        }}
+      />
+      <div className={!loaded ? "loading" : "not-loading"}>Loading...</div>
       {current !== 0 && (
         <BsFillArrowLeftCircleFill
           className="prev-btn arrowsSVG"

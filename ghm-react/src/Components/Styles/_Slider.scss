@@ -27,7 +27,16 @@
     object-fit: cover;
     transition: all 1s;
     pointer-events: none;
-    opacity: 0;
+  }
+
+  .loading {
+    display: block;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem;
+  }
+  .not-loading {
+    display: none;
   }
 
   .arrowsSVG {

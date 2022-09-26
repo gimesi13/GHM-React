@@ -349,6 +349,11 @@
     content: url("../Pictures/landing-XL.webp");
   }
 }
+@media (min-width: 576px) and (min-width: 1300px) {
+  .react-parallax-bgimage {
+    content: url("../Pictures/landing-XXL.webp");
+  }
+}
 
 /* MIXINS */
 /* VARIABLES */
@@ -1076,8 +1081,8 @@
   cursor: pointer;
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: opacity 1s ease;
-  transition: opacity 1s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 @media (min-width: 576px) {
   .footer .footer-left .up-arrow-svg {
@@ -1093,6 +1098,13 @@
 .footer .footer-left .visible-svg {
   opacity: 1;
   pointer-events: all;
+}
+.footer .footer-left .visible-svg:hover {
+  opacity: 0.7;
+}
+.footer .footer-left .visible-svg:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 .footer .footer-right {
   display: -webkit-box;
@@ -1169,7 +1181,15 @@
   -webkit-transition: all 1s;
   transition: all 1s;
   pointer-events: none;
-  opacity: 0;
+}
+.slider .loading {
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem;
+}
+.slider .not-loading {
+  display: none;
 }
 .slider .arrowsSVG {
   cursor: pointer;
