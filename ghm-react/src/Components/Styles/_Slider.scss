@@ -27,7 +27,9 @@
     object-fit: cover;
     transition: all 1s;
     pointer-events: none;
+    opacity: 0;
   }
+
   .arrowsSVG {
     cursor: pointer;
     transition: scale 0.1s;

@@ -41,6 +41,7 @@ i18n
 
 function App() {
   /* STATES */
+  const [activelanguage, setActiveLanguage] = useState("en");
 
   /* useTranslation hook */
   const { t } = useTranslation();
@@ -53,7 +54,12 @@ function App() {
         <div className="App">
           <Switch>
             <Route exact path="/">
-              <Navbar i18n={i18n} t={t} />
+              <Navbar
+                i18n={i18n}
+                t={t}
+                activelanguage={activelanguage}
+                setActiveLanguage={setActiveLanguage}
+              />
               <Hero t={t} />
               <About t={t} />
               <Rooms t={t} />
@@ -64,7 +70,7 @@ function App() {
               <Footer t={t} />
             </Route>
             <Route exact path="/book" t={t}>
-              <Book t={t} />
+              <Book t={t} activelanguage={activelanguage} />
               <Footer t={t} />
             </Route>
           </Switch>

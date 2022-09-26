@@ -23,7 +23,11 @@ yarn-debug.log*
 yarn-error.log*
 
 location maps //needs a fix
-fix parallax
-animations
-glitchy navbar scroll top
-hamburger menu animation
+
+language select styling
+booking page links and image
+up arreow nav tap
+better background pic on large screen
+image slider animations
+multilang google forms
+performance suggesions by lighthouse

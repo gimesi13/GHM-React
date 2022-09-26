@@ -5,7 +5,7 @@ import OutsideClick from "detect-outside-click-react";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
 import { CgMenu, CgClose } from "react-icons/cg";
 
-function Navbar({ i18n, t }) {
+function Navbar({ i18n, t, setActiveLanguage }) {
   /* states */
   const [isOpen, setIsOpen] = useState(false);
   const controlMenu = useAnimation();
@@ -82,6 +82,7 @@ function Navbar({ i18n, t }) {
   /*LANGUAGE SWITCHER*/
   const handleChange = (e) => {
     i18n.changeLanguage(e.target.value);
+    setActiveLanguage(e.target.value);
   };
 
   /* Menu click handler */
@@ -171,9 +172,9 @@ function Navbar({ i18n, t }) {
       </OutsideClick>
 
       <select className="language" name="language" onChange={handleChange}>
-        <option value="en">English</option>
-        <option value="ge">German</option>
-        <option value="hu">Hungarian</option>
+        <option value="en">🇬🇧</option>
+        <option value="ge">🇩🇪</option>
+        <option value="hu">🇭🇺</option>
       </select>
     </motion.div>
   );

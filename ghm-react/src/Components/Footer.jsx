@@ -64,7 +64,7 @@ function Footer({ t }) {
           </a>
 
           <a
-            href="https://www.airbnb.hu/rooms/41781311"
+            href="https://www.airbnb.com/rooms/41781311"
             target="_blank"
             rel="noreferrer"
           >

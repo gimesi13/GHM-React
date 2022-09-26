@@ -238,7 +238,7 @@
 .navbar .language {
   position: absolute;
   right: 4.5rem;
-  width: 41px;
+  width: 40px;
   cursor: pointer;
 }
 @media (min-width: 768px) {
@@ -1169,6 +1169,7 @@
   -webkit-transition: all 1s;
   transition: all 1s;
   pointer-events: none;
+  opacity: 0;
 }
 .slider .arrowsSVG {
   cursor: pointer;
@@ -1355,6 +1356,18 @@
 .book .booking-card p {
   padding: 0;
   text-align: left;
+}
+.book .airbnb-link:link {
+  color: #0000ee;
+}
+.book .airbnb-link:visited {
+  color: #551a8b;
+}
+.book .booking-link:link {
+  color: #0000ee;
+}
+.book .booking-link:visited {
+  color: #551a8b;
 }
 
 /* BREAKPOINTS
