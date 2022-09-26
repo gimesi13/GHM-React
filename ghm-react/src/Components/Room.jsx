@@ -7,7 +7,7 @@ function Room({ picture, name, price, t }) {
   const animatePanel = {
     hidden: {},
     show: {
-      transition: { delayChildren: 0.3, staggerChildren: 0.2 },
+      transition: { delayChildren: 0.2, staggerChildren: 0.2 },
     },
   };
 

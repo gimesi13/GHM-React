@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import gemeindealpe from "./Pictures/gemeindealpe-small.jpg";
-import mariazell from "./Pictures/mariazell-small.jpg";
-import annaberg from "./Pictures/annaberg-small.jpg";
+import gemeindealpe from "./Pictures/gemeindealpe-small.webp";
+import mariazell from "./Pictures/mariazell-small.webp";
+import annaberg from "./Pictures/annaberg-small.webp";
 
 export default function Slopes({ t }) {
   const slopes = [
@@ -56,7 +56,7 @@ export function Slope({ name, picture, text, link }) {
   const animatePanel = {
     hidden: {},
     show: {
-      transition: { delayChildren: 0.3, staggerChildren: 0.3 },
+      transition: { delayChildren: 0.2, staggerChildren: 0.2 },
     },
   };
 
@@ -70,7 +70,7 @@ export function Slope({ name, picture, text, link }) {
       className="slope"
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.1 }}
       variants={animatePanel}
     >
       <motion.img

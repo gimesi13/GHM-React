@@ -10,7 +10,7 @@ function Location({ t }) {
     show: {
       opacity: 1,
 
-      transition: { delayChildren: 0.5, staggerChildren: 0.2 },
+      transition: { delayChildren: 0.3, staggerChildren: 0.2 },
     },
   };
 

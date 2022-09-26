@@ -10,7 +10,7 @@ function Hero({ t }) {
     show: {
       x: 0,
       opacity: 1,
-      transition: { delay: 1, delayChildren: 1.5, staggerChildren: 0.2 },
+      transition: { delay: 1, delayChildren: 1.2, staggerChildren: 0.2 },
     },
   };
 

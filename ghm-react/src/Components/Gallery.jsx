@@ -1,16 +1,16 @@
 import React from "react";
 import Slider from "./Slider";
 import gallerySVG from "./Pictures/undraw-gallery.svg";
-import img1 from "./Pictures/snowboarders.jpg";
-import img2 from "./Pictures/gallery-01.jpg";
-import img3 from "./Pictures/gallery-02.jpg";
-import img4 from "./Pictures/gallery-03.jpg";
-import img5 from "./Pictures/gallery-04.jpg";
-import img6 from "./Pictures/gallery-05.jpg";
-import img7 from "./Pictures/gallery-06.jpg";
-import img8 from "./Pictures/gallery-08.jpg";
-import img9 from "./Pictures/gallery-09.jpg";
-import img10 from "./Pictures/gallery-11.jpg";
+import img1 from "./Pictures/snowboarders.webp";
+import img2 from "./Pictures/gallery-01.webp";
+import img3 from "./Pictures/gallery-02.webp";
+import img4 from "./Pictures/gallery-03.webp";
+import img5 from "./Pictures/gallery-04.webp";
+import img6 from "./Pictures/gallery-05.webp";
+import img7 from "./Pictures/gallery-06.webp";
+import img8 from "./Pictures/gallery-08.webp";
+import img9 from "./Pictures/gallery-09.webp";
+import img10 from "./Pictures/gallery-11.webp";
 
 export default function Gallery({ t }) {
   return (
