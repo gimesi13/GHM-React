@@ -74,6 +74,7 @@ export function Slope({ name, picture, text, link }) {
       variants={animatePanel}
     >
       <motion.img
+        loading="lazy"
         src={picture}
         alt=""
         className="slope-image"

@@ -26,7 +26,7 @@ export default function Gallery({ t }) {
         </Slider>
       </div>
       <div className="image">
-        <img alt="gallery" src={gallerySVG} />
+        <img loading="lazy" alt="gallery" src={gallerySVG} />
       </div>
     </section>
   );

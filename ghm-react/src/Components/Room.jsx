@@ -26,6 +26,7 @@ function Room({ picture, name, price, t }) {
     >
       <NavLink to="/book">
         <motion.img
+          loading="lazy"
           alt=""
           src={picture}
           className="room-image"

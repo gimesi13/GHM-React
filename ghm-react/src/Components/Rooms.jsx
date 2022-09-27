@@ -1,9 +1,9 @@
 import React from "react";
 import Room from "./Room";
-import doubleroom from "./Pictures/room-double.jpg";
-import room4 from "./Pictures/room-4.jpg";
-import room6 from "./Pictures/room-6.jpg";
-import room8 from "./Pictures/room-8.jpg";
+import doubleroom from "./Pictures/room-double.webp";
+import room4 from "./Pictures/room-4.webp";
+import room6 from "./Pictures/room-6.webp";
+import room8 from "./Pictures/room-8.webp";
 
 function Rooms({ t }) {
   const rooms = [

@@ -2,11 +2,11 @@ import React from "react";
 import Slider from "./Slider";
 import { motion } from "framer-motion";
 import dog from "./Pictures/undraw-dog.svg";
-import rv1 from "./Pictures/review1.png";
-import rv2 from "./Pictures/review2.png";
-import rv3 from "./Pictures/review3.png";
-import rv4 from "./Pictures/sonja-review.PNG";
-import rv5 from "./Pictures/paul-review.PNG";
+import rv1 from "./Pictures/review1.webp";
+import rv2 from "./Pictures/review2.webp";
+import rv3 from "./Pictures/review3.webp";
+import rv4 from "./Pictures/sonja-review.webp";
+import rv5 from "./Pictures/paul-review.webp";
 
 function About({ t }) {
   /* VARIANTS */

@@ -36,7 +36,7 @@ function Location({ t }) {
         <motion.h1 variants={animateText}>{t("LOCATION")}</motion.h1>
         <motion.p variants={animateText}>{t("location_text")}</motion.p>
         <motion.div className="map" variants={animateMap}>
-          <GoogleMaps className="map-inner" />
+          <GoogleMaps loading="lazy" async className="map-inner" />
         </motion.div>
       </motion.div>
 
