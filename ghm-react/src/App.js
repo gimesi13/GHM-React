@@ -33,15 +33,15 @@ i18n
       ge: { translation: translationsGe },
       hu: { translation: translationsHu },
     },
-    lng: "en",
-    fallbackLng: "en",
+    lng: "ge",
+    fallbackLng: "ge",
     interpolation: { escapeValue: false },
   });
 /* LANGUAGES END */
 
 function App() {
   /* STATES */
-  const [activelanguage, setActiveLanguage] = useState("en");
+  const [activelanguage, setActiveLanguage] = useState("ge");
 
   /* useTranslation hook */
   const { t } = useTranslation();
