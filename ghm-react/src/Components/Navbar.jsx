@@ -76,7 +76,6 @@ function Navbar({ i18n, t, setActiveLanguage, activelanguage }) {
       let nav = document.getElementById("navbar");
       nav.classList.remove("shrink");
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navbar]);
 
   /*LANGUAGE SWITCHER*/
